@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./img/machadle_logo.ico" type="image/x-icon">
+  <title>Machadle</title>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+<div id="main-container">
+  <a href="./index.html">
+    <img id="logo_machadle" src="./img/machadle_logo.webp" alt="Logo do Machadle. Feitos com um brasão composto, de trás para frente, de um escudo, um machado e uma bigorna">
+  </a>
+
+  <div class="game-description">
+    <h3>Adivinhe o aventureiro do Clã do Machado de hoje!</h3>
+    <!-- TODO: diminuir o tamanho e o contraste da fonte do span identificador da temporada -->
+    <span class="note">Aventureiros da temporada atual: segunda temporada de testes.</span>
+  </div>
+
+  <div class="guess" id="adventurers-guess-div">
+    <div id="input-guess-container">
+      <input type="text" name="" id="input-guess" placeholder="Escreva o nome do aventureiro" autocomplete="off">
+    </div>
+    <!-- <button>Guess</button> -->
+    <div id="dropdown-guess"></div>
+  </div>
+  
+  <div id="win-banner" class="hide">Acertou!</div>
+  
+  <!-- TODO: Forçar a tabela a ocupar tamanho correto, mesmo que ocupe mais do que a tela e precise de um scroll -->
+  <table class="hide" id="adventurer-table" border="0">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Espécie</th>
+        <th>Classe</th>
+        <th>Tamanho</th>
+        <th>Talento</th>
+        <th>Perícias</th>
+        <th>Idiomas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Linhas serão adicionadas aqui -->
+    </tbody>
+  </table>
+
+</div>
+
+<script src="./adventurers.js"></script>
+</body>
+</html>
