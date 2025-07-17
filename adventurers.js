@@ -7,16 +7,16 @@ let tableAdventurers = document.getElementById('adventurer-table');
 const tableBody = document.querySelector('#adventurer-table tbody');
 const guesses = [];
 let answer = {
-    name: "Naamir",
-    specie: "aasimar",
-    class: ["cleric"],
+    name: "Traxex",
+    specie: "elf",
+    class: ["rogue"],
     size: "medium",
-    originFeat: ["healer"],
-    skills: ["religion", "medicine", "insight", "history"],
-    languages: ["celestial", "infernal"],
-    tools: ["calligrapher's supplies"],
-    notes: [""]
-  };
+    originFeat: ["magic initiate"],
+    skills: ["survival", "arcana", "history", "acrobatics", "investigation", "perception", "stealth"],
+    languages: ["elvish", "draconic"],
+    tools: ["painter's supplies", "thieves' tools"],
+    notes: ["elf drow", "magic initiate wizard"]
+  }
 let win = false;
 
 
@@ -705,6 +705,17 @@ let adventurers = [
     languages: ["dwarvish", "elvish"],
     tools: ["herbalism kit"],
     notes: ["reborn de fairy", "magic initiate wizard"]
+  },
+  {
+    name: "Belladonna",
+    specie: "tiefling",
+    class: "monk",
+    size: "medium",
+    originFeat: ["preparação da caçada"],
+    skills: ["insight", "intimidation", "stealth", "acrobatics"],
+    languages: ["infernal", "draconic"],
+    tools: ["herbalism kit"],
+    notes: [""]
   },
 ];
 
