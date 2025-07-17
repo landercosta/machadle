@@ -7,15 +7,16 @@ let tableAdventurers = document.getElementById('adventurer-table');
 const tableBody = document.querySelector('#adventurer-table tbody');
 const guesses = [];
 let answer = {
-    name: "Cleiton",
-    specie: "human",
-    class: ["fighter"],
+    name: "Naamir",
+    specie: "aasimar",
+    class: ["cleric"],
     size: "medium",
-    originFeat: ["lucky", "tough"],
-    skills: ["survival", "animal handling", "athletics", "perception"],
-    languages: ["common sign language", "giant"],
-    tools: ["navigator's tools"]
-  }
+    originFeat: ["healer"],
+    skills: ["religion", "medicine", "insight", "history"],
+    languages: ["celestial", "infernal"],
+    tools: ["calligrapher's supplies"],
+    notes: [""]
+  },
 let win = false;
 
 
