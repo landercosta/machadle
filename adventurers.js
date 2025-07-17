@@ -16,7 +16,7 @@ let answer = {
     languages: ["celestial", "infernal"],
     tools: ["calligrapher's supplies"],
     notes: [""]
-  },
+  }
 let win = false;
 
 
