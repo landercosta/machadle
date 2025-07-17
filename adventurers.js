@@ -7,15 +7,14 @@ let tableAdventurers = document.getElementById('adventurer-table');
 const tableBody = document.querySelector('#adventurer-table tbody');
 const guesses = [];
 let answer = {
-    name: "Psi Psi",
-    specie: "tabaxi",
-    class: ["barbarian"],
-    size: "small",
-    originFeat: ["crafter"],
-    skills: ["perception", "stealth", "sleight of hand", "animal handling"],
-    languages: ["celestial", "primordial"],
-    tools: ["smith's tools", "carpenter's tools", "weaver's tools", "tinker's tools"],
-    notes: [""]
+    name: "Cleiton",
+    specie: "human",
+    class: ["fighter"],
+    size: "medium",
+    originFeat: ["lucky", "tough"],
+    skills: ["survival", "animal handling", "athletics", "perception"],
+    languages: ["common sign language", "giant"],
+    tools: ["navigator's tools"]
   }
 let win = false;
 
