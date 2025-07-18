@@ -15,19 +15,25 @@
 }
 
 body {
-  background-image: url('./img/worldMap.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  margin: 0;
-
   font-family: 'MedievalSharp', serif;
   letter-spacing: 1px;
   /* color: #ddd; */
 }
 
-body::before {
+.background_fixed_image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./img/worldMap.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Fica atrás de todo o conteúdo */
+}
+
+.background_fixed_image::before {
   content: "";
   position: fixed;
   top: 0; left: 0;
@@ -235,6 +241,7 @@ table {
   border-spacing: 10px;
   background: transparent;
   max-width: 60rem;
+  overflow-x: auto;
 }
 
 .hide {

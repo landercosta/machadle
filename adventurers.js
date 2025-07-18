@@ -1,3 +1,4 @@
+// Variáveis html
 let adventurersGuessDiv = document.getElementById('adventurers-guess-div');
 let inputGuessContainer = document.getElementById('input-guess-container');
 let inputGuess = document.getElementById('input-guess');
@@ -5,7 +6,11 @@ let winBanner = document.getElementById('win-banner');
 let dropdownGuess = document.getElementById('dropdown-guess');
 let tableAdventurers = document.getElementById('adventurer-table');
 const tableBody = document.querySelector('#adventurer-table tbody');
+
+// Variáveis do jogo
 const guesses = [];
+let win = false;
+
 let answer = {
     name: "Aizen",
     specie: "human",
@@ -17,8 +22,6 @@ let answer = {
     tools: ["calligrapher's supplies"],
     notes: [""]
   }
-let win = false;
-
 
 let adventurers = [
   // {
@@ -720,7 +723,6 @@ let adventurers = [
 ];
 
 const sorteado = adventurers[Math.floor(Math.random() * adventurers.length)];
-
 console.log(sorteado);
 
 // TODO: Melhorar o display dos aventureiros achados na pesquisa
