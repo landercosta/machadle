@@ -199,6 +199,16 @@ input[type="text"]:focus {
   color: var(--h2-color);
   font-size: 5rem;
   margin-top: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#img-today-classic-adventurer {
+  max-width: 10rem;
+  max-height: 10rem;
 }
 
 #dropdown-guess {
@@ -242,10 +252,11 @@ table {
   background: transparent;
   max-width: 60rem;
   overflow-x: auto;
+  width: 100%;
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 th, td {

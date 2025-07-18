@@ -1,28 +1,3 @@
-// Variáveis html
-let adventurersGuessDiv = document.getElementById('adventurers-guess-div');
-let inputGuessContainer = document.getElementById('input-guess-container');
-let inputGuess = document.getElementById('input-guess');
-let winBanner = document.getElementById('win-banner');
-let dropdownGuess = document.getElementById('dropdown-guess');
-let tableAdventurers = document.getElementById('adventurer-table');
-const tableBody = document.querySelector('#adventurer-table tbody');
-
-// Variáveis do jogo
-const guesses = [];
-let win = false;
-
-let answer = {
-    name: "Aizen",
-    specie: "human",
-    class: ["artificer"],
-    size: "medium",
-    originFeat: ["luck"],
-    skills: ["athletics", "arcana", "insight", "investigation", "persuasion"],
-    languages: ["undercommon", "dwarvish", "elvish"],
-    tools: ["calligrapher's supplies"],
-    notes: [""]
-  }
-
 let adventurers = [
   // {
   //   name: "",
@@ -712,7 +687,7 @@ let adventurers = [
   {
     name: "Belladonna",
     specie: "tiefling",
-    class: "monk",
+    class: ["monk"],
     size: "medium",
     originFeat: ["preparação da caçada"],
     skills: ["insight", "intimidation", "stealth", "acrobatics"],
@@ -722,21 +697,51 @@ let adventurers = [
   },
 ];
 
-const sorteado = adventurers[Math.floor(Math.random() * adventurers.length)];
-console.log(sorteado);
+// Variáveis html
+let adventurersGuessDiv = document.getElementById('adventurers-guess-div');
+let inputGuessContainer = document.getElementById('input-guess-container');
+let inputGuess = document.getElementById('input-guess');
+let winBanner = document.getElementById('win-banner');
+let dropdownGuess = document.getElementById('dropdown-guess');
+let tableAdventurers = document.getElementById('adventurer-table');
+const tableBody = document.querySelector('#adventurer-table tbody');
 
-// TODO: Melhorar o display dos aventureiros achados na pesquisa
-// TODO: Fazer o estilo CSS da tabela que mostra os palpites errados
+// Variáveis do jogo
+let answers = {
+  18: "Aizen",
+  19: "Kardrum",
+  20: "Kaira",
+  21: "Heimer-Ding III",
+  22: "Adhanji Ekko",
+  23: "Luli",
+  24: "Tor'ka",
+  25: "Yoh Asakura",
+  26: "Elijah Abdul",
+  27: "Benji",
+  28: "Wigfrid",
+  29: "Kravak",
+  30: "Ronaldo",
+}
+
+const guesses = [];
+let win = false;
+let date = getBRDate();
+let todayAnswerName = answers[`${date.day}`];
+const todayAnswerIndex = adventurers.findIndex(adventurer => adventurer.name === todayAnswerName);
+let todayAnswer = adventurers[todayAnswerIndex];
+
+// const sorteado = adventurers[Math.floor(Math.random() * adventurers.length)];
+// console.log(sorteado);
 
 inputGuess.addEventListener('input', () => {
   // TODO: usar algoritmo para remover comparação com acentos e outros caracteres ao invés de apenas comparar com lowerCase
-  const searchedTerm = inputGuess.value.toLowerCase();
+  const searchedTerm = normalizeString(inputGuess.value);
 
   dropdownGuess.innerHTML = '';
 
   if(!searchedTerm) return;
       
-  const filteredAdventurers = adventurers.filter(adventurer => adventurer.name.toLowerCase().startsWith(searchedTerm));
+  const filteredAdventurers = adventurers.filter(adventurer => normalizeString(adventurer.name).startsWith(searchedTerm));
 
   if(filteredAdventurers) makeSearchDropdown(filteredAdventurers);
 
@@ -789,15 +794,16 @@ function addItemOnTable(adventurer) {
     languages: []
   }
 
-  key.name = adventurer.name === answer.name ? 'right' : 'wrong';
-  key.specie = adventurer.specie === answer.specie ? 'right' : 'wrong';
-  key.class = compareArraysGuessWithAnswer(adventurer.class, answer.class);
-  key.size = adventurer.size === answer.size ? 'right' : 'wrong';
-  key.originFeat = compareArraysGuessWithAnswer(adventurer.originFeat, answer.originFeat);
-  key.skills = compareArraysGuessWithAnswer(adventurer.skills, answer.skills);
-  key.languages = compareArraysGuessWithAnswer(adventurer.languages, answer.languages);
+  key.name = adventurer.name === todayAnswer.name ? 'right' : 'wrong';
+  key.specie = adventurer.specie === todayAnswer.specie ? 'right' : 'wrong';
+  key.class = compareArraysGuessWithAnswer(adventurer.class, todayAnswer.class);
+  key.size = adventurer.size === todayAnswer.size ? 'right' : 'wrong';
+  key.originFeat = compareArraysGuessWithAnswer(adventurer.originFeat, todayAnswer.originFeat);
+  key.skills = compareArraysGuessWithAnswer(adventurer.skills, todayAnswer.skills);
+  key.languages = compareArraysGuessWithAnswer(adventurer.languages, todayAnswer.languages);
 
   const tr = document.createElement('tr');
+  
   tr.innerHTML = `
     <td class=${key.name}>${adventurer.name}</td>
     <td class=${key.specie}>${adventurer.specie}</td>
@@ -813,9 +819,7 @@ function addItemOnTable(adventurer) {
 }
 
 function isRightAnswer(name){
-  if(name.toLowerCase() === answer.name.toLowerCase())
-    return true;
-  return false;
+  return name.toLowerCase() === todayAnswer.name.toLowerCase() ? true : false;
 }
 
 function compareArraysGuessWithAnswer(arr1, arr2) {
@@ -832,4 +836,22 @@ function compareArraysGuessWithAnswer(arr1, arr2) {
 
   // Nenhum item em comum
   return 'wrong';
+}
+
+function getBRDate(){
+  const nowBrazil = new Date(
+    new Date().toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' })
+  );
+
+  const date = {
+    day: nowBrazil.getDate(),
+    month: nowBrazil.getMonth() + 1,
+    year: nowBrazil.getFullYear()
+  }
+
+  return date;
+}
+
+function normalizeString(str) {
+  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 }
