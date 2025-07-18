@@ -704,6 +704,7 @@ let inputGuess = document.getElementById('input-guess');
 let winBanner = document.getElementById('win-banner');
 let dropdownGuess = document.getElementById('dropdown-guess');
 let tableAdventurers = document.getElementById('adventurer-table');
+let imgTodayClassicAdventurer = document.getElementById('img-today-classic-adventurer');
 const tableBody = document.querySelector('#adventurer-table tbody');
 
 // Variáveis do jogo
@@ -729,6 +730,8 @@ let date = getBRDate();
 let todayAnswerName = answers[`${date.day}`];
 const todayAnswerIndex = adventurers.findIndex(adventurer => adventurer.name === todayAnswerName);
 let todayAnswer = adventurers[todayAnswerIndex];
+// TODO: salvar todas as imagens de aventureiros e converter para webp
+imgTodayClassicAdventurer.setAttribute("src", `./img/adventurers/${todayAnswerName.toLowerCase()}.webp`);
 
 // const sorteado = adventurers[Math.floor(Math.random() * adventurers.length)];
 // console.log(sorteado);
