@@ -7,15 +7,15 @@ let tableAdventurers = document.getElementById('adventurer-table');
 const tableBody = document.querySelector('#adventurer-table tbody');
 const guesses = [];
 let answer = {
-    name: "Traxex",
-    specie: "elf",
-    class: ["rogue"],
+    name: "Aizen",
+    specie: "human",
+    class: ["artificer"],
     size: "medium",
-    originFeat: ["magic initiate"],
-    skills: ["survival", "arcana", "history", "acrobatics", "investigation", "perception", "stealth"],
-    languages: ["elvish", "draconic"],
-    tools: ["painter's supplies", "thieves' tools"],
-    notes: ["elf drow", "magic initiate wizard"]
+    originFeat: ["luck"],
+    skills: ["athletics", "arcana", "insight", "investigation", "persuasion"],
+    languages: ["undercommon", "dwarvish", "elvish"],
+    tools: ["calligrapher's supplies"],
+    notes: [""]
   }
 let win = false;
 
@@ -718,6 +718,10 @@ let adventurers = [
     notes: [""]
   },
 ];
+
+const sorteado = adventurers[Math.floor(Math.random() * adventurers.length)];
+
+console.log(sorteado);
 
 // TODO: Melhorar o display dos aventureiros achados na pesquisa
 // TODO: Fazer o estilo CSS da tabela que mostra os palpites errados
