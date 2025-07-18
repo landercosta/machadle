@@ -711,7 +711,7 @@ let answers = {
   18: "Aizen",
   19: "Kardrum",
   20: "Kaira",
-  21: "Heimer-Ding III",
+  21: "Heimmer-Ding III",
   22: "Adhanji Ekko",
   23: "Luli",
   24: "Tor'ka",
