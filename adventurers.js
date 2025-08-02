@@ -709,19 +709,7 @@ const tableBody = document.querySelector('#adventurer-table tbody');
 
 // Variáveis do jogo
 let answers = {
-  18: "Aizen",
-  19: "Kardrum",
-  20: "Kaira",
-  21: "Heimmer-Ding III",
-  22: "Adhanji Ekko",
-  23: "Luli",
-  24: "Tor'ka",
-  25: "Yoh Asakura",
-  26: "Elijah Abdul",
-  27: "Benji",
-  28: "Wigfrid",
-  29: "Kravak",
-  30: "Ronaldo",
+  02: "Kaira",
 }
 
 const guesses = [];
