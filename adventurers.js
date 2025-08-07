@@ -709,7 +709,8 @@ const tableBody = document.querySelector('#adventurer-table tbody');
 
 // Variáveis do jogo
 let answers = {
-  03: "Naamir",
+  06: "Ronaldo",
+  07: "Aldebaran",
 }
 
 const guesses = [];
