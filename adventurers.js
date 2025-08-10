@@ -153,7 +153,7 @@ let adventurers = [
     originFeat: ["savage attacker"],
     skills: ["perception", "arcana", "acrobatics", "investigation", "sleight of hand", "stealth"],
     languages: ["elvish", "sylvan", "thieves' cant"],
-    tools: ["disguise kit"],
+    tools: ["disguise kit", "thieves' tools"],
     notes: ["wood elf"]
   },
   {
@@ -230,7 +230,7 @@ let adventurers = [
     originFeat: ["magic initiate"],
     skills: ["arcana", "history", "insight", "acrobatics", "investigation", "perception", "stealth"],
     languages: ["abyssal", "infernal"],
-    tools: ["disguise kit"],
+    tools: ["disguise kit", "thieves' tools"],
     notes: ["magic initiate wizard"]
   },
   {
@@ -648,7 +648,7 @@ let adventurers = [
     originFeat: ["skilled"],
     skills: ["athletics", "stealth", "investigation", "deception", "sleight of hand", "acrobatics", "perception", "persuasion", "insight"],
     languages: ["thieves' cant"],
-    tools: ["forgery kit"],
+    tools: ["forgery kit", "thieves' tools"],
     notes: ["tiefling infernal"]
   },
   {
@@ -695,6 +695,209 @@ let adventurers = [
     tools: ["herbalism kit"],
     notes: [""]
   },
+  {
+    name: "Mírio",
+    specie: "goblin",
+    class: "sorcerer",
+    size: "small",
+    originFeat: ["magic initiate"],
+    skills: ["stealth", "perception", "arcana", "persuasion"],
+    languages: ["goblin", "primordial"],
+    tools: ["musical instrument"],
+    notes: ["musical instrument lute", "magic initiate de qual tipo?"]
+  },
+  {
+    name: "Elijah Abdul",
+    specie: "tiefling",
+    class: "rogue",
+    size: "medium",
+    originFeat: [""],
+    skills: ["deception", "sleight of hand", "acrobatics", "perception", "persuasion", "insight"],
+    languages: [],
+    tools: ["forgery kit", "thieves' tools"],
+    notes: [""]
+  },
+  {
+    name: "Gorar Rarogsøn",
+    specie: "aasimar",
+    class: "barbarian",
+    size: "medium",
+    originFeat: ["tough"],
+    skills: ["intimidation", "survival", "athletics", "perception"],
+    languages: ["celestial", "draconic"],
+    tools: ["navigator's tools"],
+    notes: [""]
+  },
+  {
+    name: "Aldebaran",
+    specie: "tiefling",
+    class: "warlock",
+    size: "medium",
+    originFeat: ["lucky"],
+    skills: ["persuasion", "perception", "deception", "arcana"],
+    languages: ["infernal", "orc"],
+    tools: ["disguise kit"],
+    notes: [""]
+  },  
+  {
+    name: "Yu-baba",
+    specie: "reborn",
+    class: "shaman",
+    size: "medium",
+    originFeat: ["magic initiate"],
+    skills: ["insight", "stealth", "perception", "survival"],
+    languages: ["dwarvish", "elvish"],
+    tools: ["herbalism kit"],
+    notes: ["reborn de fairy", "magic initiate wizard"]
+  },
+  {
+    name: "Thalor Tempesmar",
+    specie: "human",
+    class: "druid",
+    size: "medium",
+    originFeat: ["magic initiate", "tough"],
+    skills: ["insight", "deception", "nature", "perception"],
+    languages: ["primordial", "sylvan"],
+    tools: ["navigator's tools"],
+    notes: ["Magic initiate Wizard"]
+  },
+  {
+    name: "Sanguinyus",
+    specie: "dragonborn",
+    class: "fighter",
+    size: "medium",
+    originFeat: ["magic initiate"],
+    skills: ["stealth", "insight", "acrobatics", "perception"],
+    languages: ["draconic", "abyssal"],
+    tools: ["cartographer's tools"],
+    notes: [""]
+  },
+  {
+    name: "John Pathfinder",
+    specie: "human",
+    class: "rogue",
+    size: "medium",
+    originFeat: ["skilled", "skilled"],
+    skills: ["history", "survival", "religion", "animal handling", "medicine", "arcana", "nature", "investigation", "insight", "acrobatics", "sleight of hand"],
+    languages: [],
+    tools: ["cartographer's tools", "jeweler's tools", "calligrapher's supplies", "thieves' tools"],
+    notes: [""]
+  },
+  {
+    name: "Aurora",
+    specie: "aasimar",
+    class: "druid",
+    size: "medium",
+    originFeat: ["magic initiate"],
+    skills: ["stealth", "survival", "medicine", "perception"],
+    languages: ["celestial", "common sign language"],
+    tools: ["cartographer's tools"],
+    notes: ["magic initiate druid"]
+  },
+  {
+    name: "Lirae Varethiel",
+    specie: "elf",
+    class: "monk",
+    size: "medium",
+    originFeat: ["savage attacker"],
+    skills: ["perception", "insight", "religion", "acrobatics", "stealth"],
+    languages: ["elvish", "celestial", "infernal", "goblin"],
+    tools: ["tinker's tools"],
+    notes: ["high elf"]
+  },
+  {
+    name: "Aeren Virelith",
+    specie: "elf",
+    class: "rogue",
+    size: "medium",
+    originFeat: ["lucky"],
+    skills: ["perception", "arcana", "history", "acrobatics", "investigation", "sleight of hand", "stealth"],
+    languages: ["dwarvish", "draconic", "thieves' cant"],
+    tools: ["herbalism kit", "thieves' tools"],
+    notes: ["high elf"]
+  },
+  {
+    name: "Patrurgo Bugurgo",
+    specie: "bugbear",
+    class: "ranger",
+    size: "medium",
+    originFeat: ["alert"],
+    skills: ["stelth", "nature", "acrobatics", "perception", "insight", "survival"],
+    languages: ["goblin", "undercommon"],
+    tools: ["musical instrument"],
+    notes: ["musical instrument bagpipes"]
+  },
+  {
+    name: "Minno'Xi Dhyl",
+    specie: "elf",
+    class: "ranger",
+    size: "medium",
+    originFeat: ["lucky"],
+    skills: ["perception", "religion", "acrobatics", "insight", "stealth", "survival"],
+    languages: ["celestial", "elvish"],
+    tools: ["jeweler's tools"],
+    notes: ["high elf"]
+  },
+  {
+    name: "Garro Runcandel",
+    specie: "human",
+    class: "paladin",
+    size: "medium",
+    originFeat: ["magic initiate", "lucky"],
+    skills: ["persuasion", "survival", "perception", "athletics", "intimidation"],
+    languages: ["undercommon", "celestial"],
+    tools: ["smith's tools"],
+    notes: ["magic initiate wizard"]
+  },
+  {
+    name: "Vassa Punho das Cinzas",
+    specie: "goliath",
+    class: "monk",
+    size: "medium",
+    originFeat: ["lucky"],
+    skills: ["stealth", "insight", "acrobatics", "religion"],
+    languages: ["giant", "dwarvish"],
+    tools: ["thieves' tools", "brewer's supplies"],
+    notes: ["goliath fire"]
+  },
+  {
+    name: "Caranthir Maenal",
+    specie: "elf",
+    class: "rogue",
+    size: "medium",
+    originFeat: ["alert"],
+    skills: ["survival", "perception", "stealth", "sleight of hand", "acrobatics", "arcana", "investigation"],
+    languages: ["elf", "orc"],
+    tools: ["poisoner's kit"],
+    notes: [""]
+  },
+  {
+    name: "Seraphina Silvaine",
+    specie: "dhampir",
+    class: "rogue",
+    size: "medium",
+    originFeat: ["alert"],
+    skills: ["investigation", "acrobatics", "perception", "intimidation", "sleight of hand", "stealth"],
+    languages: ["draconic", "infernal"],
+    tools: ["thieves' tools"],
+    notes: [""]
+  },
+
+
+
+
+
+  // {
+  //   name: "",
+  //   specie: "",
+  //   class: "",
+  //   size: "",
+  //   originFeat: [""],
+  //   skills: [],
+  //   languages: [],
+  //   tools: [],
+  //   notes: [""]
+  // },
 ];
 
 // Variáveis html
