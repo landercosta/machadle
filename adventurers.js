@@ -912,7 +912,7 @@ const tableBody = document.querySelector('#adventurer-table tbody');
 
 // Variáveis do jogo
 let answers = {
-  10: "Vildamór",
+  11: "Aeren Virelith",
 }
 
 const guesses = [];
