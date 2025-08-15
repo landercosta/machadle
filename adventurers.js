@@ -966,7 +966,7 @@ let answers = {
   23: "Gertrudes"
 }
 
-pickAdventurer();
+// pickAdventurer();
 
 const guesses = [];
 let win = false;
