@@ -35,7 +35,7 @@ let adventurers = [
     class: ["fighter"],
     size: "medium",
     originFeat: ["lucky", "tough"],
-    skills: ["survival", "animal handling", "athletics", "perception"],
+    skills: ["survival", "nature", "athletics", "perception"],
     languages: ["common sign language", "giant"],
     tools: ["navigator's tools"]
   },
@@ -54,11 +54,11 @@ let adventurers = [
     specie: "human",
     class: ["paladin"],
     size: "medium",
-    originFeat: ["alert", "magic initiate"],
+    originFeat: ["tough", "magic initiate"],
     skills: ["insight", "perception", "survival", "intimidation", "persuasion"],
     languages: ["elvish", "celestial"],
-    tools: ["musical instrument"],
-    notes: ["musical instrument flute", "magic initiate wizard"]
+    tools: ["smith's tools"],
+    notes: ["magic initiate wizard"]
   },
   {
     name: "Serena",
@@ -97,10 +97,10 @@ let adventurers = [
     class: ["fighter"],
     size: "medium",
     originFeat: ["tough", "magic initiate"],
-    skills: ["arcana", "animal handling", "perception", "athletics", "survival"],
+    skills: ["arcana", "history", "perception", "persuasion", "survival"],
     languages: ["draconic", "giant"],
     tools: ["carpenter's tools"],
-    notes: ["magic initiate wizard"]
+    notes: ["magic initiate druid"]
   },
   {
     name: "Kaelen Suri",
@@ -119,10 +119,10 @@ let adventurers = [
     class: ["ranger"],
     size: "medium",
     originFeat: ["magic initiate"],
-    skills: ["acrobatics", "perception", "nature", "stealth", "perception"],
+    skills: ["acrobatics", "perception", "insight", "stealth", "perception"],
     languages: ["abyssal", "primordial"],
     tools: ["smith's tools"],
-    notes: ["magic initiate wizard"]
+    notes: ["magic initiate wizard", "tiefling infernal"]
   },
   {
     name: "Vildamór",
@@ -132,7 +132,7 @@ let adventurers = [
     originFeat: ["magic initiate"],
     skills: ["perception", "arcana", "religion", "athletics", "insight"],
     languages: ["elvish", "draconic"],
-    tools: ["Alchemist's Supplies"],
+    tools: ["alchemist's Supplies"],
     notes: ["high elf", "magic initiate"]
   },
   {
@@ -206,11 +206,11 @@ let adventurers = [
     specie: "tiefling",
     class: ["monk"],
     size: "medium",
-    originFeat: ["tavern brawler"],
+    originFeat: ["magic initiate"],
     skills: ["perception", "survival", "acrobatics", "stealth"],
     languages: ["abyssal", "primordial"],
     tools: ["cook's utensils", "weaver's tools"],
-    notes: [""]
+    notes: ["magic initiate wizard"]
   },
   {
     name: "Kira",
@@ -268,7 +268,7 @@ let adventurers = [
     notes: ["magic initiate druid"]
   },
   {
-    name: "Heimmer-Ding III",
+    name: "HD-III",
     specie: "autognome",
     class: ["artificer"],
     size: "small",
@@ -298,7 +298,7 @@ let adventurers = [
     skills: ["acrobatics", "perception", "deception", "history", "persuasion", "performance", "intimidation", "arcana"],
     languages: ["infernal", "abyssal"],
     tools: ["dice set"],
-    notes: ["tiefling chthonic"]
+    notes: ["tiefling infernal"]
   },
   {
     name: "Ben",
@@ -319,7 +319,7 @@ let adventurers = [
     originFeat: ["crafter"],
     skills: ["perception", "stealth", "sleight of hand", "animal handling"],
     languages: ["celestial", "primordial"],
-    tools: ["smith's tools", "carpenter's tools", "weaver's tools", "tinker's tools"],
+    tools: ["smith's tools", "woodcarver's tools", "weaver's tools", "cook's utensils"],
     notes: [""]
   },
   {
@@ -346,14 +346,14 @@ let adventurers = [
   },
   {
     name: "Felaris O'llen",
-    specie: "human",
+    specie: "goliath",
     class: ["fighter"],
     size: "medium",
-    originFeat: ["savage attacker", "lucky"],
-    skills: ["insight", "perception", "persuasion", "survival", "intimidation"],
+    originFeat: ["lucky"],
+    skills: ["sleight of hand", "history", "survival", "athletics"],
     languages: ["draconic", "infernal"],
-    tools: ["thieves' tools"],
-    notes: [""]
+    tools: ["cartographer's tools"],
+    notes: ["goliath stone"]
   },
   {
     name: "Raffi",
@@ -460,7 +460,7 @@ let adventurers = [
     class: ["monk"],
     size: "medium",
     originFeat: ["healer", "tough"],
-    skills: ["sleight of hands", "perception", "medicine", "acrobatics", "stealth"],
+    skills: ["sleight of hands", "perception", "survival", "acrobatics", "stealth"],
     languages: ["elvish", "sylvan"],
     tools: ["weaver's tools"],
     notes: [""]
@@ -603,7 +603,7 @@ let adventurers = [
     class: ["paladin"],
     size: "small",
     originFeat: ["magic initiate"],
-    skills: ["deception", "intimidation", "persuasion", "athletics"],
+    skills: ["deception", "animal handling", "persuasion", "athletics"],
     languages: ["gnomish", "sylvan"],
     tools: ["herbalism kit"],
     notes: ["forest gnome", "magic initiate druid"]
@@ -676,13 +676,13 @@ let adventurers = [
   },
   {
     name: "Belladonna",
-    specie: "tiefling",
+    specie: "human",
     class: ["monk"],
     size: "medium",
-    originFeat: ["preparação da caçada"],
-    skills: ["insight", "intimidation", "stealth", "acrobatics"],
+    originFeat: ["oportunista", "tough"],
+    skills: ["insight", "deception", "stealth", "acrobatics", "sleight of hand"],
     languages: ["infernal", "draconic"],
-    tools: ["herbalism kit"],
+    tools: ["alchemist's Supplies"],
     notes: [""]
   },
   {
@@ -775,8 +775,8 @@ let adventurers = [
   },
   {
     name: "Aurora",
-    specie: ["aasimar"],
-    class: "druid",
+    specie: "aasimar",
+    class: ["druid"],
     size: "medium",
     originFeat: ["magic initiate"],
     skills: ["stealth", "survival", "medicine", "perception"],
@@ -883,7 +883,50 @@ let adventurers = [
     tools: [""],
     notes: ["elf drow"]
   },
-
+  {
+    name: "Sthurnie",
+    specie: "tabaxi",
+    class: ["cleric", "fighter"],
+    size: "medium",
+    originFeat: [""],
+    skills: ["religion"],
+    languages: [],
+    tools: ["woodcarver's tools"],
+    notes: [""]
+  },
+  {
+    name: "Severo",
+    specie: "goliath",
+    class: ["paladin"],
+    size: "medium",
+    originFeat: ["tough"],
+    skills: ["athletics", "intimidation", "insight", "persuasion"],
+    languages: [""],
+    tools: ["gaming set"],
+    notes: ["goliath stone", "Gaming Set: playing cards"]
+  },
+  {
+    name: "Xhan-kizs",
+    specie: "bugbear",
+    class: ["fighter"],
+    size: "medium",
+    originFeat: ["alert"],
+    skills: ["athletics", "insight", "survival", "stealth", "intimidation"],
+    languages: [],
+    tools: [],
+    notes: [""]
+  },
+  {
+    name: "Rakhar",
+    specie: "orc",
+    class: ["rogue"],
+    size: "medium",
+    originFeat: ["magic initiate"],
+    skills: ["arcana", "medicine", "deception", "perception", "sleight of hand", "stealth"],
+    languages: [""],
+    tools: ["cook's utensils", "thieves' tools"],
+    notes: ["magic initiate wizard"]
+  },
 
 
 

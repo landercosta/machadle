@@ -1,0 +1,8 @@
+- Belladonna: confirmar dados de skills e tools. Não ficou 100% claro no respec (https://discord.com/channels/509826698473111563/1392899407770288138/1399826982828773617)
+- Benji: confirmar skills e tipo do magic initiate
+- Narguezelli: skills estão erradas. Respec (https://discord.com/channels/509826698473111563/1392899407770288138/1397736245953560729) informa troca de athletics para survival, mas o canal do nível 1 não contém athletics.
+- Noah: saber se conto ou não o tough ganho por invocação do warlock
+- Rakhar: faltam os idiomas (https://discord.com/channels/509826698473111563/1392899407770288138/1402105467047772312)
+- Severo: faltam os idiomas que ele fala (https://discord.com/channels/509826698473111563/1392899407770288138/1401651349485125642)
+- Sthurnie: sem informações de origin feat, skills, languages e tools no respec (https://discord.com/channels/509826698473111563/1392899407770288138/1398803771538145393)
+- Xhan-kizs: faltam os idiomas e a ferramenta (https://discord.com/channels/509826698473111563/1392899407770288138/1401662901357514864)
