@@ -1,14 +1,4 @@
 let adventurers = [
-  // {
-  //   name: "",
-  //   specie: "",
-  //   class: "",
-  //   size: "",
-  //   originFeat: "",
-  //   skills: [],
-  //   languages: [],
-  //   tools: []
-  // },
   {
     name: "Narguezelli",
     specie: "aasimar",
@@ -698,7 +688,7 @@ let adventurers = [
   {
     name: "Mírio",
     specie: "goblin",
-    class: "sorcerer",
+    class: ["sorcerer"],
     size: "small",
     originFeat: ["magic initiate"],
     skills: ["stealth", "perception", "arcana", "persuasion"],
@@ -709,7 +699,7 @@ let adventurers = [
   {
     name: "Elijah Abdul",
     specie: "tiefling",
-    class: "rogue",
+    class: ["rogue"],
     size: "medium",
     originFeat: [""],
     skills: ["deception", "sleight of hand", "acrobatics", "perception", "persuasion", "insight"],
@@ -720,7 +710,7 @@ let adventurers = [
   {
     name: "Gorar Rarogsøn",
     specie: "aasimar",
-    class: "barbarian",
+    class: ["barbarian"],
     size: "medium",
     originFeat: ["tough"],
     skills: ["intimidation", "survival", "athletics", "perception"],
@@ -731,7 +721,7 @@ let adventurers = [
   {
     name: "Aldebaran",
     specie: "tiefling",
-    class: "warlock",
+    class: ["warlock"],
     size: "medium",
     originFeat: ["lucky"],
     skills: ["persuasion", "perception", "deception", "arcana"],
@@ -742,7 +732,7 @@ let adventurers = [
   {
     name: "Yu-baba",
     specie: "reborn",
-    class: "shaman",
+    class: ["shaman"],
     size: "medium",
     originFeat: ["magic initiate"],
     skills: ["insight", "stealth", "perception", "survival"],
@@ -753,7 +743,7 @@ let adventurers = [
   {
     name: "Thalor Tempesmar",
     specie: "human",
-    class: "druid",
+    class: ["druid"],
     size: "medium",
     originFeat: ["magic initiate", "tough"],
     skills: ["insight", "deception", "nature", "perception"],
@@ -764,7 +754,7 @@ let adventurers = [
   {
     name: "Sanguinyus",
     specie: "dragonborn",
-    class: "fighter",
+    class: ["fighter"],
     size: "medium",
     originFeat: ["magic initiate"],
     skills: ["stealth", "insight", "acrobatics", "perception"],
@@ -775,7 +765,7 @@ let adventurers = [
   {
     name: "John Pathfinder",
     specie: "human",
-    class: "rogue",
+    class: ["rogue"],
     size: "medium",
     originFeat: ["skilled", "skilled"],
     skills: ["history", "survival", "religion", "animal handling", "medicine", "arcana", "nature", "investigation", "insight", "acrobatics", "sleight of hand"],
@@ -785,7 +775,7 @@ let adventurers = [
   },
   {
     name: "Aurora",
-    specie: "aasimar",
+    specie: ["aasimar"],
     class: "druid",
     size: "medium",
     originFeat: ["magic initiate"],
@@ -797,7 +787,7 @@ let adventurers = [
   {
     name: "Lirae Varethiel",
     specie: "elf",
-    class: "monk",
+    class: ["monk"],
     size: "medium",
     originFeat: ["savage attacker"],
     skills: ["perception", "insight", "religion", "acrobatics", "stealth"],
@@ -808,7 +798,7 @@ let adventurers = [
   {
     name: "Aeren Virelith",
     specie: "elf",
-    class: "rogue",
+    class: ["rogue"],
     size: "medium",
     originFeat: ["lucky"],
     skills: ["perception", "arcana", "history", "acrobatics", "investigation", "sleight of hand", "stealth"],
@@ -819,7 +809,7 @@ let adventurers = [
   {
     name: "Patrurgo Bugurgo",
     specie: "bugbear",
-    class: "ranger",
+    class: ["ranger"],
     size: "medium",
     originFeat: ["alert"],
     skills: ["stelth", "nature", "acrobatics", "perception", "insight", "survival"],
@@ -830,7 +820,7 @@ let adventurers = [
   {
     name: "Minno'Xi Dhyl",
     specie: "elf",
-    class: "ranger",
+    class: ["ranger"],
     size: "medium",
     originFeat: ["lucky"],
     skills: ["perception", "religion", "acrobatics", "insight", "stealth", "survival"],
@@ -841,7 +831,7 @@ let adventurers = [
   {
     name: "Garro Runcandel",
     specie: "human",
-    class: "paladin",
+    class: ["paladin"],
     size: "medium",
     originFeat: ["magic initiate", "lucky"],
     skills: ["persuasion", "survival", "perception", "athletics", "intimidation"],
@@ -852,7 +842,7 @@ let adventurers = [
   {
     name: "Vassa Punho das Cinzas",
     specie: "goliath",
-    class: "monk",
+    class: ["monk"],
     size: "medium",
     originFeat: ["lucky"],
     skills: ["stealth", "insight", "acrobatics", "religion"],
@@ -863,7 +853,7 @@ let adventurers = [
   {
     name: "Caranthir Maenal",
     specie: "elf",
-    class: "rogue",
+    class: ["rogue"],
     size: "medium",
     originFeat: ["alert"],
     skills: ["survival", "perception", "stealth", "sleight of hand", "acrobatics", "arcana", "investigation"],
@@ -874,7 +864,7 @@ let adventurers = [
   {
     name: "Seraphina Silvaine",
     specie: "dhampir",
-    class: "rogue",
+    class: ["rogue"],
     size: "medium",
     originFeat: ["alert"],
     skills: ["investigation", "acrobatics", "perception", "intimidation", "sleight of hand", "stealth"],
@@ -882,7 +872,17 @@ let adventurers = [
     tools: ["thieves' tools"],
     notes: [""]
   },
-
+  {
+    name: "Thandoril",
+    specie: "elf",
+    class: ["ranger"],
+    size: "medium",
+    originFeat: ["savage attacker"],
+    skills: ["investigation", "insight", "perception", "survival", "stealth", "athletics"],
+    languages: ["elvish", "celestial"],
+    tools: [""],
+    notes: ["elf drow"]
+  },
 
 
 
@@ -890,7 +890,7 @@ let adventurers = [
   // {
   //   name: "",
   //   specie: "",
-  //   class: "",
+  //   class: [""],
   //   size: "",
   //   originFeat: [""],
   //   skills: [],
