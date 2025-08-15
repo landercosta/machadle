@@ -81,7 +81,7 @@ let adventurers = [
     tools: ["painter's supplies"]
   },
   {
-    name: "Lennox Levoir",
+    name: "Lennox",
     specie: "elf",
     class: ["cleric"],
     size: "medium",
@@ -422,7 +422,7 @@ let adventurers = [
     notes: [""]
   },
   {
-    name: "Pietro Parolin",
+    name: "Pietro",
     specie: "halfling",
     class: ["warlock"],
     size: "small",
@@ -796,7 +796,7 @@ let adventurers = [
     notes: ["high elf"]
   },
   {
-    name: "Aeren Virelith",
+    name: "Aeren",
     specie: "elf",
     class: ["rogue"],
     size: "medium",
@@ -956,7 +956,17 @@ const tableBody = document.querySelector('#adventurer-table tbody');
 // Variáveis do jogo
 let answers = {
   15: "Maximus",
+  16: "Severo",
+  17: "Mírio",
+  18: "Luli",
+  19: "Aeren",
+  20: "Lennox",
+  21: "Minno'Xi Dhyl",
+  22: "Noah",
+  23: "Gertrudes"
 }
+
+pickAdventurer();
 
 const guesses = [];
 let win = false;
@@ -966,9 +976,6 @@ const todayAnswerIndex = adventurers.findIndex(adventurer => adventurer.name ===
 let todayAnswer = adventurers[todayAnswerIndex];
 // TODO: salvar todas as imagens de aventureiros e converter para webp
 imgTodayClassicAdventurer.setAttribute("src", `./img/adventurers/${todayAnswerName.toLowerCase()}.webp`);
-
-// const sorteado = adventurers[Math.floor(Math.random() * adventurers.length)];
-// console.log(sorteado);
 
 inputGuess.addEventListener('input', () => {
   // TODO: usar algoritmo para remover comparação com acentos e outros caracteres ao invés de apenas comparar com lowerCase
@@ -990,6 +997,11 @@ inputGuess.addEventListener('input', () => {
     dropdownGuess.appendChild(guessedAdventurerDiv);
   }
 });
+
+function pickAdventurer(){
+  const sorteado = adventurers[Math.floor(Math.random() * adventurers.length)];
+  console.log(sorteado);
+}
 
 function makeSearchDropdown(filteredAdventurers){
   filteredAdventurers.forEach(adventurer => {
