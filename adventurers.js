@@ -717,18 +717,7 @@ let adventurers = [
     languages: ["celestial", "draconic"],
     tools: ["navigator's tools"],
     notes: [""]
-  },
-  {
-    name: "Aldebaran",
-    specie: "tiefling",
-    class: ["warlock"],
-    size: "medium",
-    originFeat: ["lucky"],
-    skills: ["persuasion", "perception", "deception", "arcana"],
-    languages: ["infernal", "orc"],
-    tools: ["disguise kit"],
-    notes: [""]
-  },  
+  }, 
   {
     name: "Yu-baba",
     specie: "reborn",
