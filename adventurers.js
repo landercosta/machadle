@@ -696,17 +696,7 @@ let adventurers = [
     tools: ["musical instrument"],
     notes: ["musical instrument lute", "magic initiate de qual tipo?"]
   },
-  {
-    name: "Elijah Abdul",
-    specie: "tiefling",
-    class: ["rogue"],
-    size: "medium",
-    originFeat: [""],
-    skills: ["deception", "sleight of hand", "acrobatics", "perception", "persuasion", "insight"],
-    languages: [],
-    tools: ["forgery kit", "thieves' tools"],
-    notes: [""]
-  },
+
   {
     name: "Gorar Rarogsøn",
     specie: "aasimar",

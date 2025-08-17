@@ -1,3 +1,4 @@
+- Perguntar se consigo acesso à lista dos aventureiros do Clã do Machado em tabelas
 - Verificar os aventureiros antes do Mírio no canal de nível 1
 
 - Aldebaran: qual tipo de tiefling?

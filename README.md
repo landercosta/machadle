@@ -8,6 +8,7 @@ Projeto de riddle para o Clã do Machado
 - Organizar estrutura de pastas
 - Implementar dados persistentes
 - Implementar estatísticas. Precisa de dados persistentes.
+- Campos da tabela no modo clássico: gênero, ferramentas
 
 ### Aprovados
 
@@ -15,5 +16,7 @@ Projeto de riddle para o Clã do Machado
 
 ### Fazendo
 - Implementação inicial
+    - Responsividade no celular
+    - Mudança nas perícias simbolizando quais perícias a resposta certa contém
 
 ### Completos

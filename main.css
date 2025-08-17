@@ -253,6 +253,8 @@ table {
   max-width: 60rem;
   overflow-x: auto;
   width: 100%;
+
+  min-width: 600px;   /* largura mínima para forçar scroll */
 }
 
 .hide {
@@ -300,6 +302,12 @@ td {
   .game-enter {
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .table-container {
+    width: 100%;
+    overflow-x: scroll;   /* cria rolagem horizontal */
+    -webkit-overflow-scrolling: touch; /* scroll suave no iOS */
   }
 
   #img-adventurers {
