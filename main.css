@@ -246,7 +246,7 @@ table {
   background-color: var(--light-background-color);
   color: #1d1208;
   font-family: 'MedievalSharp', serif;
-  box-shadow: 0 0 8px #0005;
+  /* box-shadow: 0 0 8px #0005; */
   border-collapse: separate;
   border-spacing: 10px;
   background: transparent;
