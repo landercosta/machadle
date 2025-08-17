@@ -298,7 +298,7 @@ td {
 /* responsible */
 /* TODO: reverter para mobile fist ou modo mais atual de código */
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .game-enter {
     flex-direction: column;
     gap: 1rem;
