@@ -709,17 +709,6 @@ let adventurers = [
     notes: [""]
   }, 
   {
-    name: "Yu-baba",
-    specie: "reborn",
-    class: ["shaman"],
-    size: "medium",
-    originFeat: ["magic initiate"],
-    skills: ["insight", "stealth", "perception", "survival"],
-    languages: ["dwarvish", "elvish"],
-    tools: ["herbalism kit"],
-    notes: ["reborn de fairy", "magic initiate wizard"]
-  },
-  {
     name: "Thalor Tempesmar",
     specie: "human",
     class: ["druid"],
@@ -841,7 +830,7 @@ let adventurers = [
     notes: [""]
   },
   {
-    name: "Seraphina Silvaine",
+    name: "Seraphina",
     specie: "dhampir",
     class: ["rogue"],
     size: "medium",
@@ -934,15 +923,19 @@ const tableBody = document.querySelector('#adventurer-table tbody');
 
 // Variáveis do jogo
 let answers = {
-  15: "Maximus",
-  16: "Severo",
-  17: "Mírio",
   18: "Luli",
   19: "Aeren",
   20: "Lennox",
   21: "Minno'Xi Dhyl",
   22: "Noah",
-  23: "Gertrudes"
+  23: "Gertrudes",
+  24: "Aizen",
+  25: "Zoltan",
+  26: "Seraphina",
+  27: "Ugz",
+  28: "GluGlu",
+  29: "Sanguinyus",
+  30: "Ronaldo",
 }
 
 // pickAdventurer();
