@@ -620,7 +620,7 @@ let adventurers = [
     notes: [""]
   },
   {
-    name: "Mirio",
+    name: "Mírio",
     specie: "goblin",
     class: ["sorcerer"],
     size: "small",
@@ -628,7 +628,7 @@ let adventurers = [
     skills: ["stealth", "perception", "arcana", "persuasion"],
     languages: ["goblin", "primordial"],
     tools: ["musical instrument"],
-    notes: ["magic initiate", "Musical Instrument Lute"]
+    notes: ["musical instrument lute", "magic initiate de qual tipo?"]
   },
   {
     name: "Elijah Abdul",
@@ -685,29 +685,6 @@ let adventurers = [
     tools: ["alchemist's Supplies"],
     notes: [""]
   },
-  {
-    name: "Mírio",
-    specie: "goblin",
-    class: ["sorcerer"],
-    size: "small",
-    originFeat: ["magic initiate"],
-    skills: ["stealth", "perception", "arcana", "persuasion"],
-    languages: ["goblin", "primordial"],
-    tools: ["musical instrument"],
-    notes: ["musical instrument lute", "magic initiate de qual tipo?"]
-  },
-
-  {
-    name: "Gorar Rarogsøn",
-    specie: "aasimar",
-    class: ["barbarian"],
-    size: "medium",
-    originFeat: ["tough"],
-    skills: ["intimidation", "survival", "athletics", "perception"],
-    languages: ["celestial", "draconic"],
-    tools: ["navigator's tools"],
-    notes: [""]
-  }, 
   {
     name: "Thalor Tempesmar",
     specie: "human",
