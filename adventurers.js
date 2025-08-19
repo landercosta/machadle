@@ -50,7 +50,7 @@ let adventurers = [
     tools: ["smith's tools"]
   },
   {
-    name: "Shiro Ryu",
+    name: "Shiro",
     specie: "human",
     class: ["paladin"],
     size: "medium",
@@ -323,7 +323,7 @@ let adventurers = [
     notes: [""]
   },
   {
-    name: "Islogtan Magsdein",
+    name: "Islogtan",
     specie: "goliath",
     class: ["barbarian"],
     size: "medium",
@@ -345,7 +345,7 @@ let adventurers = [
     notes: [""]
   },
   {
-    name: "Felaris O'llen",
+    name: "Felaris",
     specie: "goliath",
     class: ["fighter"],
     size: "medium",
@@ -609,7 +609,7 @@ let adventurers = [
     notes: ["forest gnome", "magic initiate druid"]
   },
   {
-    name: "Guy Gadsby",
+    name: "Guy",
     specie: "human",
     class: ["wizard"],
     size: "small",
@@ -730,7 +730,7 @@ let adventurers = [
     notes: ["magic initiate druid"]
   },
   {
-    name: "Lirae Varethiel",
+    name: "Lirae",
     specie: "elf",
     class: ["monk"],
     size: "medium",
@@ -774,7 +774,7 @@ let adventurers = [
     notes: ["high elf"]
   },
   {
-    name: "Garro Runcandel",
+    name: "Garro",
     specie: "human",
     class: ["paladin"],
     size: "medium",
@@ -871,6 +871,17 @@ let adventurers = [
     languages: [""],
     tools: ["cook's utensils", "thieves' tools"],
     notes: ["magic initiate wizard"]
+  },
+  {
+    name: "Kael'Thar",
+    specie: "aasimar",
+    class: ["warlock"],
+    size: "medium",
+    originFeat: ["tough"],
+    skills: ["acrobatics", "perception", "intimidation", "deception"],
+    languages: ["celestial", "elvish"],
+    tools: [""],
+    notes: [""]
   },
 
 

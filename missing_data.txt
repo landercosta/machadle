@@ -17,3 +17,4 @@
 - Sthurnie: sem informações de origin feat, skills, languages e tools no respec (https://discord.com/channels/509826698473111563/1392899407770288138/1398803771538145393)
 - Thalor Tempesmar: qual é o tamanho?
 - Xhan-kizs: faltam os idiomas e a ferramenta (https://discord.com/channels/509826698473111563/1392899407770288138/1401662901357514864)
+- Kael'Thar: proficiência em kit de curandeiro, não sei o que é. (https://discord.com/channels/509826698473111563/1374763126473363637/1406972396732289116)

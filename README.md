@@ -3,6 +3,8 @@ Projeto de riddle para o Clã do Machado
 
 ## Planejamento do projeto
 ### Ideias
+- Aviso de lançamento
+    - Pedir para reportar: erros, dados faltantes, handout faltando
 - Sorteio das respostas de forma automática
 - Escolher algum SSG ou framework. Provável escolha: Astro.
     - Organizar estrutura de pastas
