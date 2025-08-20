@@ -1,4 +1,11 @@
+- Xhanks de fora por falta de informações
+
+
 - Perguntar se consigo acesso à lista dos aventureiros do Clã do Machado em tabelas
+
+
+
+
 - Verificar os aventureiros antes do Mírio no canal de nível 1
 
 - Aldebaran: qual tipo de tiefling?
@@ -16,5 +23,5 @@
 - Severo: faltam os idiomas que ele fala (https://discord.com/channels/509826698473111563/1392899407770288138/1401651349485125642)
 - Sthurnie: sem informações de origin feat, skills, languages e tools no respec (https://discord.com/channels/509826698473111563/1392899407770288138/1398803771538145393)
 - Thalor Tempesmar: qual é o tamanho?
-- Xhan-kizs: faltam os idiomas e a ferramenta (https://discord.com/channels/509826698473111563/1392899407770288138/1401662901357514864)
+- Xhan-kizs: faltam os idiomas e a ferramenta (https://discord.com/channels/509826698473111563/1392899407770288138/1401662901357514864) - Verificar se o Xhanks é o mesmo personagem apenas com ficha alterada e pegar as novas informações da ficha
 - Kael'Thar: proficiência em kit de curandeiro, não sei o que é. (https://discord.com/channels/509826698473111563/1374763126473363637/1406972396732289116)

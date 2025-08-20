@@ -850,17 +850,28 @@ let adventurers = [
     tools: ["gaming set"],
     notes: ["goliath stone", "Gaming Set: playing cards"]
   },
-  {
-    name: "Xhan-kizs",
-    specie: "bugbear",
-    class: ["fighter"],
-    size: "medium",
-    originFeat: ["alert"],
-    skills: ["athletics", "insight", "survival", "stealth", "intimidation"],
-    languages: [],
-    tools: [],
-    notes: [""]
-  },
+  // {
+  //   name: "Xhan-kizs",
+  //   specie: "bugbear",
+  //   class: ["fighter"],
+  //   size: "medium",
+  //   originFeat: ["alert"],
+  //   skills: ["athletics", "insight", "survival", "stealth", "intimidation"],
+  //   languages: [],
+  //   tools: [],
+  //   notes: [""]
+  // },
+  // {
+  //   name: "Xhanks",
+  //   specie: "bugbear",
+  //   class: ["barbarian"],
+  //   size: "medium",
+  //   originFeat: ["alert"],
+  //   skills: [],
+  //   languages: [],
+  //   tools: [],
+  //   notes: [""]
+  // },
   {
     name: "Rakhar",
     specie: "orc",
@@ -881,6 +892,17 @@ let adventurers = [
     skills: ["acrobatics", "perception", "intimidation", "deception"],
     languages: ["celestial", "elvish"],
     tools: [""],
+    notes: [""]
+  },
+  {
+    name: "Christopher",
+    specie: "aasimar",
+    class: ["barbarian"],
+    size: "medium",
+    originFeat: ["tough"],
+    skills: ["stealth", "survival", "athletics", "perception"],
+    languages: ["celestial", "giant"],
+    tools: ["smith's tools"],
     notes: [""]
   },
 
