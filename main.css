@@ -2,16 +2,27 @@
   --h1-color: #D6A50D;
   --h2-color: #EADFD2;
   --h3-color: #1D1C1F;
-  --hightligth-color: #D6A50D;
+    --hightligth-color: #D6A50D;
   --note-color: #443c35;
   --light-background-color: #f3e2c7;
   --medium-background-color: #685e56;
+  --table-font-color: #fce8c3;
+
+  --parcial-right-answer-color: #2e5339;
+  --parcial-wrong-answer-color: #8b1e1e;
+  --right-answer-background: #2e5339;
+  --wrong-answer-background: #8b1e1e;
+    --parcial-answer-background: #b97327;
+
+
+  /*
   --right-answer-color: #4a7c59;
   --right-answer-background: #d8ead3;
   --parcial-answer-color: #b97327;
   --parcial-answer-background: #fce8c3;
   --wrong-answer-color: #8b1e1e;
   --wrong-answer-background: #f2c7c7;
+  */
 }
 
 body {
@@ -280,19 +291,29 @@ td {
 }
 
 .right {
-  background-color: #2e5339;
+  background-color: var(--right-answer-background);
 }
 
 .parcial {
-  background-color: #b97327;
+  background-color: var(--parcial-answer-background);
 }
 
 .wrong {
-  background-color: #8b1e1e;
+  background-color: var(--wrong-answer-background);
 }
 
 .right, .parcial, .wrong {
-  color: var(--parcial-answer-background);
+  color: var(--table-font-color);
+}
+
+/* Item certo em uma resposta parcial */
+.right-item-parcial {
+  color: var(--parcial-right-answer-color);
+}
+
+/* Item errado em uma resposta parcial */
+.wrong-item-parcial {
+  color: var(--parcial-wrong-answer-color);
 }
 
 /* responsible */

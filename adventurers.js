@@ -1040,13 +1040,73 @@ function addItemOnTable(adventurer) {
     <td class=${key.specie}>${adventurer.specie}</td>
     <td class=${key.class}>${adventurer.class.join(',<br> ')}</td>
     <td class=${key.size}>${adventurer.size}</td>
-    <td class=${key.originFeat}>${adventurer.originFeat.join(',<br> ')}</td>
-    <td class=${key.skills}>${adventurer.skills.join(',<br> ')}</td>
-    <td class=${key.languages}>${adventurer.languages.join(',<br> ')}</td>
-  `;
+    `;
+
+  // TODO: refatorar esse código removendo a repetição das funções
+    
+  if(key.originFeat === "parcial"){
+    // para cada skill, ver se está incluído na resposta certa
+    const featsWithColor = [];
+    for(feat of adventurer.originFeat){
+      if(todayAnswer.originFeat.includes(feat)){
+        featsWithColor.push(`<span class="right-item-parcial">${feat}</span>`);
+      } else {
+        featsWithColor.push(`<span class="wrong-item-parcial">${feat}</span>`);
+      }
+    }
+    tr.innerHTML += `<td class=${key.originFeat}>${featsWithColor.join('<br> ')}</td>`;
+  } else {
+    tr.innerHTML += `<td class=${key.originFeat}>${adventurer.originFeat.join('<br> ')}</td>`;
+  }
+
+  if(key.skills === "parcial"){
+    // para cada skill, ver se está incluído na resposta certa
+    const skillsWithColor = [];
+    for(skill of adventurer.skills){
+      if(todayAnswer.skills.includes(skill)){
+        skillsWithColor.push(`<span class="right-item-parcial">${skill}</span>`);
+      } else {
+        skillsWithColor.push(`<span class="wrong-item-parcial">${skill}</span>`);
+      }
+    }
+    tr.innerHTML += `<td class=${key.skills}>${skillsWithColor.join('<br> ')}</td>`;
+  } else {
+    tr.innerHTML += `<td class=${key.skills}>${adventurer.skills.join('<br> ')}</td>`;
+  }
+
+  if(key.languages === "parcial"){
+    // para cada idioma, ver se está incluído na resposta certa
+    const languagesWithColor = [];
+    for(language of adventurer.languages){
+      if(todayAnswer.languages.includes(language)){
+        languagesWithColor.push(`<span class="right-item-parcial">${language}</span>`);
+      } else {
+        languagesWithColor.push(`<span class="wrong-item-parcial">${language}</span>`);
+      }
+    }
+    tr.innerHTML += `<td class=${key.languages}>${languagesWithColor.join('<br> ')}</td>`;
+  } else {
+    tr.innerHTML += `<td class=${key.languages}>${adventurer.languages.join('<br> ')}</td>`;
+  }
 
   tableBody.insertBefore(tr, tableBody.firstChild);
   tableAdventurers.classList.remove('hide');
+
+  function resolveCellWithMultipleItems(category){
+
+  }
+
+  function getCellWithPartialResponse(category){
+    const itensWithColor = [];
+    for(item of adventurer[`${category}`]){
+      if(todayAnswer[`${category}`].includes(item)){
+        itensWithColor.push(`<span class="right-item-parcial">${item}</span>`);
+      } else {
+        itensWithColor.push(`<span class="wrong-item-parcial">${item}</span>`);
+      }
+    }
+    return `<td class=${key[`${category}`]}>${itensWithColor.join(',<br> ')}</td>`;
+  }
 }
 
 function isRightAnswer(name){
