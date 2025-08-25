@@ -2,12 +2,12 @@ let adventurers = [
   {
     name: "Narguezelli",
     specie: "aasimar",
-    class: ["monk"],
+    class: ["monk", "ranger"],
     size: "medium",
-    originFeat: ["tavern brawler"],
+    originFeat: ["tavern brawler", "ASI"],
     skills: ["acrobatics", "insight", "perception", "stealth"],
     languages: ["common sign language", "celestial"],
-    tools: ["calligrapher's supplies"]
+    tools: ["calligrapher's supplies", "ASI(dex+2)"]
   },
   {
     name: "Ágata",
@@ -42,19 +42,19 @@ let adventurers = [
   {
     name: "Ysraa",
     specie: "goliath",
-    class: ["fighter"],
+    class: ["fighter", "warlock"],
     size: "medium",
-    originFeat: ["alert"],
+    originFeat: ["alert", "dual wielder"],
     skills: ["perception", "deception", "acrobatics", "survival"],
     languages: ["infernal", "giant"],
-    tools: ["smith's tools"]
+    tools: ["smith's tools", "dual wielder dex", "tem tough pela invocação de warlock"]
   },
   {
     name: "Shiro",
     specie: "human",
-    class: ["paladin"],
+    class: ["paladin", "warlock"],
     size: "medium",
-    originFeat: ["tough", "magic initiate"],
+    originFeat: ["tough", "magic initiate", "great weapon master"],
     skills: ["insight", "perception", "survival", "intimidation", "persuasion"],
     languages: ["elvish", "celestial"],
     tools: ["smith's tools"],
@@ -65,10 +65,10 @@ let adventurers = [
     specie: "tiefling",
     class: ["shaman"],
     size: "medium",
-    originFeat: ["magic initiate"],
+    originFeat: ["tough", "war caster"],
     skills: ["arcana", "history", "nature", "survival"],
     languages: ["abyssal", "sylvan"],
-    tools: ["Calligrapher's Supplies"]
+    tools: ["Calligrapher's Supplies", "war caster wis+1"]
   },
   {
     name: "Alpha",
@@ -118,11 +118,11 @@ let adventurers = [
     specie: "tiefling",
     class: ["ranger"],
     size: "medium",
-    originFeat: ["magic initiate"],
+    originFeat: ["magic initiate", "ASI"],
     skills: ["acrobatics", "perception", "insight", "stealth", "perception"],
     languages: ["abyssal", "primordial"],
     tools: ["smith's tools"],
-    notes: ["magic initiate wizard", "tiefling infernal"]
+    notes: ["magic initiate wizard", "tiefling infernal", "ASI(dex+2)"]
   },
   {
     name: "Vildamór",
@@ -215,9 +215,9 @@ let adventurers = [
   {
     name: "Kira",
     specie: "human",
-    class: ["rogue"],
+    class: ["rogue", "sorcerer"],
     size: "human",
-    originFeat: ["magic initiate"],
+    originFeat: ["magic initiate", "lucky"],
     skills: ["arcana", "history", "insight", "acrobatics", "investigation", "perception", "stealth"],
     languages: ["abyssal", "infernal"],
     tools: ["disguise kit", "thieves' tools"],
@@ -239,11 +239,11 @@ let adventurers = [
     specie: "minotaur",
     class: ["shaman"],
     size: "medium",
-    originFeat: ["magic initiate"],
+    originFeat: ["magic initiate", "war caster"],
     skills: ["perception", "investigation", "insight", "survival"],
     languages: ["primordial", "orc"],
     tools: ["woodcarver's tools"],
-    notes: ["magic initiate wizard"]
+    notes: ["magic initiate wizard", "war caster wis+1"]
   },
   {
     name: "Kaira",
@@ -679,7 +679,7 @@ let adventurers = [
     specie: "human",
     class: ["monk"],
     size: "medium",
-    originFeat: ["oportunista", "tough"],
+    originFeat: ["oportunista", "tough", "grappler"],
     skills: ["insight", "deception", "stealth", "acrobatics", "sleight of hand"],
     languages: ["infernal", "draconic"],
     tools: ["alchemist's Supplies"],
@@ -743,13 +743,13 @@ let adventurers = [
   {
     name: "Aeren",
     specie: "elf",
-    class: ["rogue"],
+    class: ["rogue", "wizard"],
     size: "medium",
-    originFeat: ["lucky"],
+    originFeat: ["lucky", "war caster"],
     skills: ["perception", "arcana", "history", "acrobatics", "investigation", "sleight of hand", "stealth"],
     languages: ["dwarvish", "draconic", "thieves' cant"],
     tools: ["herbalism kit", "thieves' tools"],
-    notes: ["high elf"]
+    notes: ["high elf", "war caster int+1"]
   },
   {
     name: "Patrurgo Bugurgo",
@@ -785,7 +785,7 @@ let adventurers = [
     notes: ["magic initiate wizard"]
   },
   {
-    name: "Vassa Punho das Cinzas",
+    name: "Vassa",
     specie: "goliath",
     class: ["monk"],
     size: "medium",
@@ -831,13 +831,13 @@ let adventurers = [
   {
     name: "Sthurnie",
     specie: "tabaxi",
-    class: ["cleric", "fighter"],
+    class: ["fighter", "cleric"],
     size: "medium",
-    originFeat: [""],
+    originFeat: ["crafter", "war caster"],
     skills: ["religion"],
     languages: [],
     tools: ["woodcarver's tools"],
-    notes: [""]
+    notes: ["subclass trickery", "war caster wis+1"]
   },
   {
     name: "Severo",
@@ -933,19 +933,21 @@ const tableBody = document.querySelector('#adventurer-table tbody');
 
 // Variáveis do jogo
 let answers = {
-  18: "Luli",
-  19: "Aeren",
-  20: "Lennox",
-  21: "Minno'Xi Dhyl",
-  22: "Noah",
-  23: "Gertrudes",
-  24: "Aizen",
-  25: "Zoltan",
-  26: "Seraphina",
+  // 25: "Zoltan",
+  25: "Serena",
+  26: "Yunara",
   27: "Ugz",
   28: "GluGlu",
   29: "Sanguinyus",
   30: "Ronaldo",
+  31: "Rancor",
+  01: "HD-III",
+  02: "Vassa",
+  03: "Evendur",
+  04: "Tiddus",
+  05: "Vildamór",
+  06: "John Pathfinder",
+  07: "Baphomênica",
 }
 
 // pickAdventurer();
