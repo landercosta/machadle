@@ -1,3 +1,7 @@
+// Último aventureiro de nível 1 visto foi o Christopher
+// Último aventureiro de nível 5 visto foi o Rancor
+// Último respec visto foi o Kardrum
+
 let adventurers = [
   {
     name: "Narguezelli",
