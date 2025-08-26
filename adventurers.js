@@ -18,10 +18,10 @@ let adventurers = [
     specie: "changeling",
     class: ["sorcerer"],
     size: "medium",
-    originFeat: ["tough"],
+    originFeat: ["tough", "fey touched"],
     skills: ["deception", "insight", "acrobatics", "history"],
     languages: ["infernal", "primordial"],
-    tools: ["calligrapher's supplies"]
+    tools: ["calligrapher's supplies", "fey touched command"]
   },
   {
     name: "Maximus",
@@ -38,7 +38,7 @@ let adventurers = [
     specie: "human",
     class: ["fighter"],
     size: "medium",
-    originFeat: ["lucky", "tough"],
+    originFeat: ["lucky", "tough", "great weapon master"],
     skills: ["survival", "nature", "athletics", "perception"],
     languages: ["common sign language", "giant"],
     tools: ["navigator's tools"]
@@ -210,11 +210,11 @@ let adventurers = [
     specie: "tiefling",
     class: ["monk"],
     size: "medium",
-    originFeat: ["magic initiate"],
+    originFeat: ["magic initiate", "ASI"],
     skills: ["perception", "survival", "acrobatics", "stealth"],
     languages: ["abyssal", "primordial"],
     tools: ["cook's utensils", "weaver's tools"],
-    notes: ["magic initiate wizard"]
+    notes: ["tiefling abyssal", "magic initiate wizard", "ASI(dex+1wis+1)"]
   },
   {
     name: "Kira",
