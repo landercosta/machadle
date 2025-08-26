@@ -1043,12 +1043,27 @@ function addItemOnTable(adventurer) {
   tr.innerHTML = `
     <td class=${key.name}>${adventurer.name}</td>
     <td class=${key.specie}>${adventurer.specie}</td>
-    <td class=${key.class}>${adventurer.class.join(',<br> ')}</td>
-    <td class=${key.size}>${adventurer.size}</td>
     `;
-
+  
   // TODO: refatorar esse código removendo a repetição das funções
-    
+  
+  if(key.class === "parcial"){
+    // para cada skill, ver se está incluído na resposta certa
+    const classWithColor = [];
+    for(charClass of adventurer.class){
+      if(todayAnswer.class.includes(charClass)){
+        classWithColor.push(`<span class="right-item-parcial">${charClass}</span>`);
+      } else {
+        classWithColor.push(`<span class="wrong-item-parcial">${charClass}</span>`);
+      }
+    }
+    tr.innerHTML += `<td class=${key.class}>${classWithColor.join('<br> ')}</td>`;
+  } else {
+    tr.innerHTML += `<td class=${key.class}>${adventurer.class.join('<br> ')}</td>`;
+  }
+
+  tr.innerHTML += `<td class=${key.size}>${adventurer.size}</td>`;
+
   if(key.originFeat === "parcial"){
     // para cada skill, ver se está incluído na resposta certa
     const featsWithColor = [];
