@@ -1010,7 +1010,7 @@ function makeSearchDropdown(filteredAdventurers){
     guessedAdventurerDiv.classList.add('guessed-adventurer-div');
 
     guessedAdventurerDiv.addEventListener('click', () => {
-      addItemOnTable(adventurer);
+      addRowOnTable(adventurer);
       inputGuess.value = '';
       dropdownGuess.innerHTML = '';
       
@@ -1027,10 +1027,12 @@ function makeSearchDropdown(filteredAdventurers){
   });
 }
 
-function addItemOnTable(adventurer) {
+function addRowOnTable(adventurer) {
   if(guesses.includes(adventurer.name)) return;
   guesses.push(adventurer.name);
 
+  // Key significa se a resposta é certa, errada ou parcial.
+  // TODO: pensar se existe algum nome melhor do que key para substituir
   let key = {
     name: '',
     specie: '',
@@ -1058,85 +1060,35 @@ function addItemOnTable(adventurer) {
   
   // TODO: refatorar esse código removendo a repetição das funções
   
-  if(key.class === "parcial"){
-    // para cada skill, ver se está incluído na resposta certa
-    const classWithColor = [];
-    for(charClass of adventurer.class){
-      if(todayAnswer.class.includes(charClass)){
-        classWithColor.push(`<span class="right-item-parcial">${charClass}</span>`);
-      } else {
-        classWithColor.push(`<span class="wrong-item-parcial">${charClass}</span>`);
-      }
-    }
-    tr.innerHTML += `<td class=${key.class}>${classWithColor.join('<br> ')}</td>`;
-  } else {
-    tr.innerHTML += `<td class=${key.class}>${adventurer.class.join('<br> ')}</td>`;
-  }
+  let cellText = '';
+
+  cellText = key.class === "parcial" ? makeHtmlForPartialAnswer('class', adventurer.class) : `${adventurer.class.join('<br>')}`;
+  tr.innerHTML += `<td class=${key.class}>${cellText}</td>`;
 
   tr.innerHTML += `<td class=${key.size}>${adventurer.size}</td>`;
 
-  if(key.originFeat === "parcial"){
-    // para cada skill, ver se está incluído na resposta certa
-    const featsWithColor = [];
-    for(feat of adventurer.originFeat){
-      if(todayAnswer.originFeat.includes(feat)){
-        featsWithColor.push(`<span class="right-item-parcial">${feat}</span>`);
-      } else {
-        featsWithColor.push(`<span class="wrong-item-parcial">${feat}</span>`);
-      }
-    }
-    tr.innerHTML += `<td class=${key.originFeat}>${featsWithColor.join('<br> ')}</td>`;
-  } else {
-    tr.innerHTML += `<td class=${key.originFeat}>${adventurer.originFeat.join('<br> ')}</td>`;
-  }
+  cellText = key.originFeat === "parcial" ? makeHtmlForPartialAnswer('originFeat', adventurer.originFeat) : `${adventurer.originFeat.join('<br>')}`;
+  tr.innerHTML += `<td class=${key.originFeat}>${cellText}</td>`;
 
-  if(key.skills === "parcial"){
-    // para cada skill, ver se está incluído na resposta certa
-    const skillsWithColor = [];
-    for(skill of adventurer.skills){
-      if(todayAnswer.skills.includes(skill)){
-        skillsWithColor.push(`<span class="right-item-parcial">${skill}</span>`);
-      } else {
-        skillsWithColor.push(`<span class="wrong-item-parcial">${skill}</span>`);
-      }
-    }
-    tr.innerHTML += `<td class=${key.skills}>${skillsWithColor.join('<br> ')}</td>`;
-  } else {
-    tr.innerHTML += `<td class=${key.skills}>${adventurer.skills.join('<br> ')}</td>`;
-  }
+  cellText = key.skills === "parcial" ? makeHtmlForPartialAnswer('skills', adventurer.skills) : `${adventurer.skills.join('<br>')}`;
+  tr.innerHTML += `<td class=${key.skills}>${cellText}</td>`;
 
-  if(key.languages === "parcial"){
-    // para cada idioma, ver se está incluído na resposta certa
-    const languagesWithColor = [];
-    for(language of adventurer.languages){
-      if(todayAnswer.languages.includes(language)){
-        languagesWithColor.push(`<span class="right-item-parcial">${language}</span>`);
-      } else {
-        languagesWithColor.push(`<span class="wrong-item-parcial">${language}</span>`);
-      }
-    }
-    tr.innerHTML += `<td class=${key.languages}>${languagesWithColor.join('<br> ')}</td>`;
-  } else {
-    tr.innerHTML += `<td class=${key.languages}>${adventurer.languages.join('<br> ')}</td>`;
-  }
+  cellText = key.languages === "parcial" ? makeHtmlForPartialAnswer('languages', adventurer.languages) : `${adventurer.languages.join('<br>')}`;
+  tr.innerHTML += `<td class=${key.languages}>${cellText}</td>`;
 
   tableBody.insertBefore(tr, tableBody.firstChild);
   tableAdventurers.classList.remove('hide');
 
-  function resolveCellWithMultipleItems(category){
-
-  }
-
-  function getCellWithPartialResponse(category){
-    const itensWithColor = [];
-    for(item of adventurer[`${category}`]){
-      if(todayAnswer[`${category}`].includes(item)){
-        itensWithColor.push(`<span class="right-item-parcial">${item}</span>`);
+  function makeHtmlForPartialAnswer(cellTitle, cellContent){
+    const itensWithColorCode = [];
+    for(item of cellContent){
+      if(todayAnswer[cellTitle].includes(item)){
+        itensWithColorCode.push(`<span class="right-item-parcial">${item}</span>`);
       } else {
-        itensWithColor.push(`<span class="wrong-item-parcial">${item}</span>`);
+        itensWithColorCode.push(`<span class="wrong-item-parcial">${item}</span>`);
       }
     }
-    return `<td class=${key[`${category}`]}>${itensWithColor.join(',<br> ')}</td>`;
+    return itensWithColorCode.join('<br>');
   }
 }
 
