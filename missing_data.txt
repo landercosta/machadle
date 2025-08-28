@@ -1,4 +1,6 @@
 - Kira não botou o ASI/feat na ficha de nível 5 - verificada pelo pereira
+- Gertrudes não tem as skills de skilled no registro do Machadle. Verificar todas as skills da Gertrudes.
+- Naamir não tem as skills corretas e a feat de origem depois do respec
 
 
 - Xhanks de fora por falta de informações

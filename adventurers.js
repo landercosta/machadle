@@ -1,6 +1,6 @@
-// Último aventureiro de nível 1 visto foi o Christopher
-// Último aventureiro de nível 5 visto foi o Rancor
-// Último respec visto foi o Kardrum
+// Último aventureiro de nível 1 visto foi o Eiti
+// Último aventureiro de nível 5 visto foi o Rakhar
+// Último respec visto foi o Rakhar
 
 let adventurers = [
   {
@@ -474,11 +474,11 @@ let adventurers = [
     specie: "changeling",
     class: ["wizard"],
     size: "medium",
-    originFeat: ["magic initiate"],
+    originFeat: ["skilled", "skill expert"],
     skills: ["persuasion", "insight", "perception", "investigation"],
     languages: ["primordial", "undercommon"],
     tools: ["calligrapher's supplies"],
-    notes: ["magic initiate cleric"]
+    notes: ["magic initiate cleric", "skill expert(int+1)"]
   },
   {
     name: "Usk",
@@ -650,11 +650,11 @@ let adventurers = [
     specie: "aasimar",
     class: ["barbarian"],
     size: "medium",
-    originFeat: ["tough"],
+    originFeat: ["tough", "mage slayer"],
     skills: ["intimidation", "survival", "athletics", "perception"],
     languages: ["celestial", "draconic"],
     tools: ["navigator's tools"],
-    notes: [""]
+    notes: ["mage slayer(str+1)"]
   },
   {
     name: "Aldebaran",
@@ -683,8 +683,8 @@ let adventurers = [
     specie: "human",
     class: ["monk"],
     size: "medium",
-    originFeat: ["oportunista", "tough", "grappler"],
-    skills: ["insight", "deception", "stealth", "acrobatics", "sleight of hand"],
+    originFeat: ["tough", "grappler"],
+    skills: ["perception", "stealth", "acrobatics", "sleight of hand"],
     languages: ["infernal", "draconic"],
     tools: ["alchemist's Supplies"],
     notes: [""]
@@ -879,13 +879,13 @@ let adventurers = [
   {
     name: "Rakhar",
     specie: "orc",
-    class: ["rogue"],
+    class: ["rogue", "fighter"],
     size: "medium",
-    originFeat: ["magic initiate"],
+    originFeat: ["magic initiate", "skill expert"],
     skills: ["arcana", "medicine", "deception", "perception", "sleight of hand", "stealth"],
     languages: [""],
     tools: ["cook's utensils", "thieves' tools"],
-    notes: ["magic initiate wizard"]
+    notes: ["magic initiate wizard", "skill expert(dex+1)"]
   },
   {
     name: "Kael'Thar",
@@ -905,6 +905,17 @@ let adventurers = [
     size: "medium",
     originFeat: ["tough"],
     skills: ["stealth", "survival", "athletics", "perception"],
+    languages: ["celestial", "giant"],
+    tools: ["smith's tools"],
+    notes: [""]
+  },
+  {
+    name: "Eiti",
+    specie: "aasimar",
+    class: ["fighter"],
+    size: "medium",
+    originFeat: ["tough"],
+    skills: ["perception", "survival", "athletics", "intimidation"],
     languages: ["celestial", "giant"],
     tools: ["smith's tools"],
     notes: [""]
