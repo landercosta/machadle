@@ -1,6 +1,6 @@
 // Último aventureiro de nível 1 visto foi o Eiti
-// Último aventureiro de nível 5 visto foi o Rakhar
-// Último respec visto foi o Rakhar
+// Último aventureiro de nível 5 visto foi a Gertrudes
+// Último respec visto foi o Benji
 
 let adventurers = [
   {
@@ -103,7 +103,7 @@ let adventurers = [
     originFeat: ["tough", "magic initiate"],
     skills: ["arcana", "history", "perception", "persuasion", "survival"],
     languages: ["draconic", "giant"],
-    tools: ["carpenter's tools"],
+    tools: ["smith's tools"],
     notes: ["magic initiate druid"]
   },
   {
@@ -220,7 +220,7 @@ let adventurers = [
     name: "Kira",
     specie: "human",
     class: ["rogue", "sorcerer"],
-    size: "human",
+    size: "medium",
     originFeat: ["magic initiate", "lucky"],
     skills: ["arcana", "history", "insight", "acrobatics", "investigation", "perception", "stealth"],
     languages: ["abyssal", "infernal"],
