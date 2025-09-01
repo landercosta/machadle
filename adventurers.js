@@ -1,6 +1,6 @@
-// Último aventureiro de nível 1 visto foi o Eiti
-// Último aventureiro de nível 5 visto foi a Gertrudes
-// Último respec visto foi o Benji
+// Último aventureiro de nível 1 visto foi o Erick
+// Último aventureiro de nível 5 visto foi o Noah
+// Último respec visto foi o Cleiton
 
 let adventurers = [
   {
@@ -40,8 +40,8 @@ let adventurers = [
     size: "medium",
     originFeat: ["lucky", "tough", "great weapon master"],
     skills: ["survival", "nature", "athletics", "perception"],
-    languages: ["common sign language", "giant"],
-    tools: ["navigator's tools"]
+    languages: ["elvish", "giant"],
+    tools: ["smith's tools"]
   },
   {
     name: "Ysraa",
@@ -100,11 +100,11 @@ let adventurers = [
     specie: "human",
     class: ["fighter"],
     size: "medium",
-    originFeat: ["tough", "magic initiate"],
+    originFeat: ["tough", "magic initiate", "mage slayer"],
     skills: ["arcana", "history", "perception", "persuasion", "survival"],
     languages: ["draconic", "giant"],
     tools: ["smith's tools"],
-    notes: ["magic initiate druid"]
+    notes: ["magic initiate druid", "mage slayer(str+1)"]
   },
   {
     name: "Kaelen Suri",
@@ -166,29 +166,29 @@ let adventurers = [
     specie: "human",
     class: ["wizard"],
     size: "medium",
-    originFeat: ["magic initiate"],
+    originFeat: ["magic initiate", "skilled", "ASI"],
     skills: ["investigation", "insight", "persuasion", "arcana", "history"],
     languages: ["abyssal", "draconic"],
-    tools: ["alchemist's supplies"],
+    tools: ["alchemist's supplies", "ASI(int+2)"],
     notes: [""]
   },
   {
     name: "Noah",
     specie: "human",
-    class: ["warlock"],
+    class: ["warlock", "paladin"],
     size: "medium",
-    originFeat: ["magic initiate", "tough"],
+    originFeat: ["magic initiate", "oportunista", "ASI"],
     skills: ["intimidation", "perception", "survival", "arcana", "deception"],
     languages: ["infernal", "thieves' cant"],
     tools: ["thieves' tools"],
-    notes: [""]
+    notes: ["ASI(cha+2)", "tough por invocação"]
   },
   {
     name: "Galria",
     specie: "goliath",
     class: ["barbarian"],
     size: "medium",
-    originFeat: ["tough"],
+    originFeat: ["tough", "great weapon master"],
     skills: ["animal handling", "perception", "athletics", "survival"],
     languages: ["giant", "sylvan"],
     tools: ["cartographer's tools"],
@@ -199,11 +199,11 @@ let adventurers = [
     specie: "human",
     class: ["shaman"],
     size: "medium",
-    originFeat: ["tough"],
+    originFeat: ["tough", "war caster"],
     skills: ["athletics", "medicine", "insight", "perception", "survival"],
     languages: ["giant", "draconic"],
     tools: ["cook's utensils"],
-    notes: [""]
+    notes: ["war caster(wis+1)"]
   },
   {
     name: "Valente",
@@ -848,11 +848,11 @@ let adventurers = [
     specie: "goliath",
     class: ["paladin"],
     size: "medium",
-    originFeat: ["tough"],
+    originFeat: ["tough", "ASI"],
     skills: ["athletics", "intimidation", "insight", "persuasion"],
     languages: [""],
     tools: ["gaming set"],
-    notes: ["goliath stone", "Gaming Set: playing cards"]
+    notes: ["goliath stone", "Gaming Set: playing cards", "ASI(str+2)"]
   },
   // {
   //   name: "Xhan-kizs",
@@ -920,6 +920,17 @@ let adventurers = [
     tools: ["smith's tools"],
     notes: [""]
   },
+  {
+    name: "Erick",
+    specie: "goliath",
+    class: ["ranger"],
+    size: "medium",
+    originFeat: ["alert"],
+    skills: ["sleight of hand", "stealth", "investigation", "perception", "survival"],
+    languages: ["undercommon", "giant"],
+    tools: ["thieves' tools"],
+    notes: ["goliath frost"]
+  },
 
 
 
@@ -948,23 +959,23 @@ const tableBody = document.querySelector('#adventurer-table tbody');
 
 // Variáveis do jogo
 let answers = {
-  25: "Zoltan",
-  26: "Yunara",
-  27: "Ugz",
-  28: "GluGlu",
-  29: "Sanguinyus",
-  30: "Ronaldo",
-  31: "Rancor",
-  01: "HD-III",
+  01: "Yu-baba",
   02: "Vassa",
   03: "Evendur",
   04: "Tiddus",
   05: "Vildamór",
   06: "John Pathfinder",
   07: "Baphomênica",
+  08: "Serena",
+  09: "Thandoril",
+  10: "Gertrudes",
+  11: "Kael'Thar",
+  12: "Tor'ka",
+  13: "Kardrum",
+  14: "Garro",
 }
 
-// pickAdventurer();
+pickAdventurer();
 
 const guesses = [];
 let win = false;
