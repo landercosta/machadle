@@ -1,6 +1,6 @@
 // Último aventureiro de nível 1 visto foi o Erick
 // Último aventureiro de nível 5 visto foi o Noah
-// Último respec visto foi o Cleiton
+// Último respec visto foi o Caranthir
 
 let adventurers = [
   {
@@ -177,7 +177,7 @@ let adventurers = [
     specie: "human",
     class: ["warlock", "paladin"],
     size: "medium",
-    originFeat: ["magic initiate", "oportunista", "ASI"],
+    originFeat: ["magic initiate", "savage attacker", "ASI"],
     skills: ["intimidation", "perception", "survival", "arcana", "deception"],
     languages: ["infernal", "thieves' cant"],
     tools: ["thieves' tools"],
@@ -807,7 +807,7 @@ let adventurers = [
     originFeat: ["alert"],
     skills: ["survival", "perception", "stealth", "sleight of hand", "acrobatics", "arcana", "investigation"],
     languages: ["elf", "orc"],
-    tools: ["poisoner's kit"],
+    tools: ["herbalism kit"],
     notes: [""]
   },
   {
