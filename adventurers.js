@@ -680,7 +680,7 @@ let adventurers = [
   },
   {
     name: "Belladonna",
-    specie: "human",
+    specie: "tiefling",
     class: ["monk"],
     size: "medium",
     originFeat: ["tough", "grappler"],
