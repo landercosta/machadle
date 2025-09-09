@@ -1,6 +1,6 @@
-// Último aventureiro de nível 1 visto foi o Erick
-// Último aventureiro de nível 5 visto foi o Noah
-// Último respec visto foi o Caranthir
+// Último aventureiro de nível 1 visto foi o Zé da Manga
+// Último aventureiro de nível 5 visto foi o Psi Psi
+// Último respec visto foi o Valente
 
 let adventurers = [
   {
@@ -31,7 +31,8 @@ let adventurers = [
     originFeat: ["alert", "savage attacker"],
     skills: ["athletics", "intimidation", "perception", "survival"],
     languages: ["elvish", "dwarvish"],
-    tools: ["dice set"]
+    tools: ["gaming set"],
+    notes: ["dice set"]
   },
   {
     name: "Cleiton",
@@ -79,10 +80,10 @@ let adventurers = [
     specie: "aasimar",
     class: ["cleric"],
     size: "medium",
-    originFeat: ["healer"],
+    originFeat: ["healer", "ASI"],
     skills: ["arcana", "perception", "religion", "medicine"],
     languages: ["celestial", "abyssal"],
-    tools: ["painter's supplies"]
+    tools: ["painter's supplies", "ASI(+2WIS)"]
   },
   {
     name: "Lennox",
@@ -122,8 +123,8 @@ let adventurers = [
     specie: "tiefling",
     class: ["ranger"],
     size: "medium",
-    originFeat: ["magic initiate", "ASI"],
-    skills: ["acrobatics", "perception", "insight", "stealth", "perception"],
+    originFeat: ["magic initiate", "mage slayer"],
+    skills: ["perception", "survival", "insight", "intimidation"],
     languages: ["abyssal", "primordial"],
     tools: ["smith's tools"],
     notes: ["magic initiate wizard", "tiefling infernal", "ASI(dex+2)"]
@@ -210,11 +211,11 @@ let adventurers = [
     specie: "tiefling",
     class: ["monk"],
     size: "medium",
-    originFeat: ["magic initiate", "ASI"],
+    originFeat: ["tough", "grappler"],
     skills: ["perception", "survival", "acrobatics", "stealth"],
     languages: ["abyssal", "primordial"],
     tools: ["cook's utensils", "weaver's tools"],
-    notes: ["tiefling abyssal", "magic initiate wizard", "ASI(dex+1wis+1)"]
+    notes: ["tiefling abyssal", "magic initiate wizard", "grappler(+1dex)"]
   },
   {
     name: "Kira",
@@ -301,8 +302,8 @@ let adventurers = [
     originFeat: ["skilled"],
     skills: ["acrobatics", "perception", "deception", "history", "persuasion", "performance", "intimidation", "arcana"],
     languages: ["infernal", "abyssal"],
-    tools: ["dice set"],
-    notes: ["tiefling infernal"]
+    tools: ["gaming set"],
+    notes: ["tiefling infernal", "dice set"]
   },
   {
     name: "Ben",
@@ -320,11 +321,11 @@ let adventurers = [
     specie: "tabaxi",
     class: ["barbarian"],
     size: "small",
-    originFeat: ["crafter"],
+    originFeat: ["crafter", "dual wielder"],
     skills: ["perception", "stealth", "sleight of hand", "animal handling"],
     languages: ["celestial", "primordial"],
     tools: ["smith's tools", "woodcarver's tools", "weaver's tools", "cook's utensils"],
-    notes: [""]
+    notes: ["subclass zealot", "dual wielder(+1str)"]
   },
   {
     name: "Islogtan",
@@ -342,11 +343,11 @@ let adventurers = [
     specie: "aasimar",
     class: ["cleric"],
     size: "medium",
-    originFeat: ["healer"],
+    originFeat: ["tough", "great weapon master"],
     skills: ["religion", "medicine", "insight", "history"],
     languages: ["celestial", "infernal"],
     tools: ["calligrapher's supplies"],
-    notes: [""]
+    notes: ["war cleric"]
   },
   {
     name: "Felaris",
@@ -463,11 +464,11 @@ let adventurers = [
     specie: "human",
     class: ["monk"],
     size: "medium",
-    originFeat: ["healer", "tough"],
+    originFeat: ["healer", "tough", "ASI"],
     skills: ["sleight of hands", "perception", "survival", "acrobatics", "stealth"],
     languages: ["elvish", "sylvan"],
     tools: ["weaver's tools"],
-    notes: [""]
+    notes: ["subclass mercy", "ASI(+1DEX+1WIS)"]
   },
   {
     name: "Gertrudes",
@@ -543,8 +544,8 @@ let adventurers = [
     originFeat: ["alert"],
     skills: ["perception", "deception", "performance", "intimidation", "persuasion"],
     languages: ["dwarvish", "elvish"],
-    tools: ["dice set"],
-    notes: [""]
+    tools: ["gaming set"],
+    notes: ["dice set"]
   },
   {
     name: "Zoltan",
@@ -554,8 +555,8 @@ let adventurers = [
     originFeat: ["savage attacker"],
     skills: ["athletics", "intimidation", "religion", "persuasion"],
     languages: ["orc", "dwarvish"],
-    tools: ["dice set"],
-    notes: [""]
+    tools: ["gaming set"],
+    notes: ["dice set"]
   },
   {
     name: "Paxó",
@@ -628,11 +629,11 @@ let adventurers = [
     specie: "goblin",
     class: ["sorcerer"],
     size: "small",
-    originFeat: ["magic initiate"],
+    originFeat: ["magic initiate", "elemental adept"],
     skills: ["stealth", "perception", "arcana", "persuasion"],
     languages: ["goblin", "primordial"],
     tools: ["musical instrument"],
-    notes: ["musical instrument lute", "magic initiate de qual tipo?"]
+    notes: ["musical instrument lute", "magic initiate de qual tipo?", "elemental adept fogo (+1cha)"]
   },
   {
     name: "Elijah Abdul",
@@ -661,11 +662,11 @@ let adventurers = [
     specie: "tiefling",
     class: ["warlock"],
     size: "medium",
-    originFeat: ["lucky"],
+    originFeat: ["lucky", "spell sniper"],
     skills: ["persuasion", "perception", "deception", "arcana"],
     languages: ["infernal", "orc"],
     tools: ["disguise kit"],
-    notes: [""]
+    notes: ["spell sniper(+1cha)", "great old one"]
   },
   {
     name: "Yu-baba",
@@ -931,6 +932,72 @@ let adventurers = [
     tools: ["thieves' tools"],
     notes: ["goliath frost"]
   },
+  {
+    name: "Han",
+    specie: "gnome",
+    class: ["wizard"],
+    size: "small",
+    originFeat: ["magic initiate"],
+    skills: ["arcana", "history", "insight", "medicine"],
+    languages: ["gnomish", "elvish"],
+    tools: [],
+    notes: [""]
+  },
+  {
+    name: "Elric",
+    specie: "human",
+    class: ["fighter"],
+    size: "medium",
+    originFeat: ["lucky"],
+    skills: ["perception", "insight", "stealth", "acrobactics", "persuasion"],
+    languages: ["thieves' cant", "dwarvish"],
+    tools: ["thieves' tools"],
+    notes: [""]
+  },
+  {
+    name: "Horion",
+    specie: "elf",
+    class: ["sorcerer"],
+    size: "medium",
+    originFeat: ["skilled"],
+    skills: ["perception", "intimidation", "deception", "investigation", "persuasion", "history", "arcana", "insight"],
+    languages: ["elf", "draconic"],
+    tools: ["gaming set"],
+    notes: ["high elf", "dice set"]
+  },
+  {
+    name: "Belldran",
+    specie: "dwarf",
+    class: ["paladin"],
+    size: "medium",
+    originFeat: ["magic initiate"],
+    skills: ["insight", "religion", "athletics", "persuasion"],
+    languages: ["celestial", "primordial"],
+    tools: ["calligrapher's supplies"],
+    notes: ["duergar", "magic initiate cleric"]
+  },
+  {
+    name: "Zé da Manga",
+    specie: "dwarf",
+    class: ["druid"],
+    size: "medium",
+    originFeat: ["tough"],
+    skills: ["medicine", "animal handling", "perception", "nature"],
+    languages: ["dwarvish", "sylvan", "druidc"],
+    tools: ["carpenter's tools"],
+    notes: [""]
+  },
+
+
+
+
+
+
+
+
+
+
+
 
 
 
