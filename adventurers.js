@@ -1026,13 +1026,6 @@ const tableBody = document.querySelector('#adventurer-table tbody');
 
 // Variáveis do jogo
 let answers = {
-  01: "Yu-baba",
-  02: "Vassa",
-  03: "Evendur",
-  04: "Tiddus",
-  05: "Vildamór",
-  06: "John Pathfinder",
-  07: "Baphomênica",
   08: "Serena",
   09: "Thandoril",
   10: "Gertrudes",
@@ -1040,9 +1033,16 @@ let answers = {
   12: "Tor'ka",
   13: "Kardrum",
   14: "Garro",
+  15: "Ugz",
+  16: "Aldebaran",
+  17: "Sylas Kow",
+  18: "Thandoril",
+  19: "Christopher",
+  20: "Eiti",
+  21: "Valente",
 }
 
-pickAdventurer();
+// pickAdventurer();
 
 const guesses = [];
 let win = false;
