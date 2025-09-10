@@ -5,6 +5,8 @@
 - Não informa as perícias cedidas com skilled
 - Han: Falta a proficiência na ferramenta
 - Elric: Falta um talento de origem de humano
+- Mug só tem um idioma na lista
+- Dumbo diz que a feat de origem é criminal, coloquei alert que vem no background criminal, mas não dá para ter certeza. Também escreveu as proficiências de forma errada, é ladino com apenas a thieve's tools de proficiência de ferramenta
 
 
 - Xhanks de fora por falta de informações

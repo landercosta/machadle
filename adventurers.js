@@ -1,5 +1,5 @@
-// Último aventureiro de nível 1 visto foi o Zé da Manga
-// Último aventureiro de nível 5 visto foi o Psi Psi
+// Último aventureiro de nível 1 visto foi o Bramble
+// Último aventureiro de nível 5 visto foi a Estel
 // Último respec visto foi o Valente
 
 let adventurers = [
@@ -145,11 +145,11 @@ let adventurers = [
     specie: "elf",
     class: ["rogue"],
     size: "medium",
-    originFeat: ["savage attacker"],
+    originFeat: ["savage attacker", "ASI"],
     skills: ["perception", "arcana", "acrobatics", "investigation", "sleight of hand", "stealth"],
     languages: ["elvish", "sylvan", "thieves' cant"],
     tools: ["disguise kit", "thieves' tools"],
-    notes: ["wood elf"]
+    notes: ["wood elf", "ASI(+2dex)"]
   },
   {
     name: "Ronar",
@@ -987,7 +987,61 @@ let adventurers = [
     tools: ["carpenter's tools"],
     notes: [""]
   },
-
+  {
+    name: "Mug",
+    specie: "orc",
+    class: ["druid"],
+    size: "medium",
+    originFeat: ["magic initiate"],
+    skills: ["survival", "stealth", "insight", "nature"],
+    languages: ["orc"],
+    tools: ["cartographer's tools"],
+    notes: ["magic initiate druid"]
+  },
+  {
+    name: "Marquês de Lorenzo",
+    specie: "elf",
+    class: ["sorcerer"],
+    size: "medium",
+    originFeat: ["alert"],
+    skills: ["perception", "arcana", "insight", "deception", "persuasion"],
+    languages: ["elvish", "draconic"],
+    tools: ["thieves' tools"],
+    notes: ["high elf"]
+  },
+  {
+    name: "Zurgo",
+    specie: "orc",
+    class: ["cleric"],
+    size: "medium",
+    originFeat: ["tough"],
+    skills: ["athletics", "perception", "insight", "religion"],
+    languages: ["orc", "celestial"],
+    tools: ["cook's utensils"],
+    notes: [""]
+  },
+  {
+    name: "Dumbo",
+    specie: "halfling",
+    class: ["rogue"],
+    size: "small",
+    originFeat: ["alert"],
+    skills: ["acrobatics", "insight", "perception", "stealth"],
+    languages: ["halfling", "goblin"],
+    tools: ["thieves' tools"],
+    notes: [""]
+  },
+  {
+    name: "Bramble",
+    specie: "harengon",
+    class: ["fighter"],
+    size: "medium",
+    originFeat: ["musician"],
+    skills: ["performance", "acrobatics", "history", "persuasion"],
+    languages: ["sylvan", "goblin"],
+    tools: ["musical instrument"],
+    notes: ["musical instrument flute"]
+  },
 
 
 
