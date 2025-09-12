@@ -1,6 +1,6 @@
-// Último aventureiro de nível 1 visto foi o Bramble
+// Último aventureiro de nível 1 visto foi o Turuk
 // Último aventureiro de nível 5 visto foi a Estel
-// Último respec visto foi o Valente
+// Último respec visto foi o Shiro
 
 let adventurers = [
   {
@@ -59,7 +59,7 @@ let adventurers = [
     specie: "human",
     class: ["paladin", "warlock"],
     size: "medium",
-    originFeat: ["tough", "magic initiate", "great weapon master"],
+    originFeat: ["tough", "magic initiate", "fey touched"],
     skills: ["insight", "perception", "survival", "intimidation", "persuasion"],
     languages: ["elvish", "celestial"],
     tools: ["smith's tools"],
@@ -913,13 +913,13 @@ let adventurers = [
   {
     name: "Eiti",
     specie: "aasimar",
-    class: ["fighter"],
+    class: ["paladin"],
     size: "medium",
     originFeat: ["tough"],
     skills: ["perception", "survival", "athletics", "intimidation"],
     languages: ["celestial", "giant"],
     tools: ["smith's tools"],
-    notes: [""]
+    notes: ["subclass devotion"]
   },
   {
     name: "Erick",
@@ -1042,6 +1042,89 @@ let adventurers = [
     tools: ["musical instrument"],
     notes: ["musical instrument flute"]
   },
+  {
+    name: "Dante",
+    specie: "halfling",
+    class: ["barbarian"],
+    size: "small",
+    originFeat: ["savage attacker"],
+    skills: ["intimidation", "athletics", "survival", "perception"],
+    languages: ["halfling", "druidic"],
+    tools: ["gaming set"],
+    notes: ["gaming set: playing cards"]
+  },
+  {
+    name: "Gherman",
+    specie: "halfling",
+    class: ["fighter"],
+    size: "small",
+    originFeat: ["alert"],
+    skills: ["survival", "history", "perception", "athletics"],
+    languages: ["halfling", "elvish"],
+    tools: ["thieves' tools"],
+    notes: [""]
+  },
+  {
+    name: "Lyzander",
+    specie: "Thri-kreen",
+    class: ["ranger"],
+    size: "medium",
+    originFeat: ["alert"],
+    skills: ["stealth", "sleight of hand", "investigation", "survival", "perception"],
+    languages: ["draconic", "abyssal"],
+    tools: ["thieves' tools"],
+    notes: [""]
+  },
+  {
+    name: "Arthas",
+    specie: "human",
+    class: ["cleric"],
+    size: "medium",
+    originFeat: ["magic initiate", "healer"],
+    skills: ["insight", "religion"],
+    languages: ["celestial", "infernal"],
+    tools: ["smith's tools"],
+    notes: [""]
+  },
+  {
+    name: "Kael Draven",
+    specie: "human",
+    class: ["fighter"],
+    size: "medium",
+    originFeat: ["savage attacker"],
+    skills: ["stealth", "athletics", "intimidation", "perception"],
+    languages: ["dwarvish", "elvish"],
+    tools: ["gaming set"],
+    notes: ["gaming set: playing cards"]
+  },
+  {
+    name: "Drised",
+    specie: "elf",
+    class: ["ranger"],
+    size: "medium",
+    originFeat: ["magic initiate"],
+    skills: ["animal handling", "athletics", "perception", "stealth", "survival", "insight"],
+    languages: ["elvish", "druidic"],
+    tools: ["cartographer's tools"],
+    notes: ["forest elf, ele chamou de silvestre", "magic initiate druid"]
+  },
+  {
+    name: "Turuk",
+    specie: "human",
+    class: ["wizard"],
+    size: "medium",
+    originFeat: ["lucky", "alert"],
+    skills: ["perception", "sleight of hand", "stealth", "arcana", "religion"],
+    languages: ["undercommon", "celestial"],
+    tools: ["thieves' tools"],
+    notes: [""]
+  },
+
+
+
+
+
+
 
 
 
