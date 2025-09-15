@@ -1174,13 +1174,6 @@ const tableBody = document.querySelector('#adventurer-table tbody');
 
 // Variáveis do jogo
 let answers = {
-  08: "Serena",
-  09: "Thandoril",
-  10: "Gertrudes",
-  11: "Kael'Thar",
-  12: "Tor'ka",
-  13: "Kardrum",
-  14: "Garro",
   15: "Ugz",
   16: "Aldebaran",
   17: "Sylas Kow",
@@ -1188,6 +1181,13 @@ let answers = {
   19: "Christopher",
   20: "Eiti",
   21: "Valente",
+  22: "Galria",
+  23: "HD-III",
+  24: "Sylas Kow",
+  25: "Elijah Abdul",
+  26: "Kael",
+  27: "Ronaldo",
+  28: "Kaira",
 }
 
 // pickAdventurer();
