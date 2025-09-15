@@ -1,6 +1,6 @@
-// Último aventureiro de nível 1 visto foi o Turuk
-// Último aventureiro de nível 5 visto foi a Estel
-// Último respec visto foi o Shiro
+// Último aventureiro de nível 1 visto foi o Kalius
+// Último aventureiro de nível 5 visto foi a Yu-baba
+// Último respec visto foi o Naamir
 
 let adventurers = [
   {
@@ -121,7 +121,7 @@ let adventurers = [
   {
     name: "Rancor",
     specie: "tiefling",
-    class: ["ranger"],
+    class: ["paladin"],
     size: "medium",
     originFeat: ["magic initiate", "mage slayer"],
     skills: ["perception", "survival", "insight", "intimidation"],
@@ -341,13 +341,13 @@ let adventurers = [
   {
     name: "Naamir",
     specie: "aasimar",
-    class: ["cleric"],
+    class: ["barbarian"],
     size: "medium",
     originFeat: ["tough", "great weapon master"],
     skills: ["religion", "medicine", "insight", "history"],
     languages: ["celestial", "infernal"],
-    tools: ["calligrapher's supplies"],
-    notes: ["war cleric"]
+    tools: ["Smith tools"],
+    notes: ["Barbarian Wild Heart"]
   },
   {
     name: "Felaris",
@@ -607,11 +607,11 @@ let adventurers = [
     specie: "gnome",
     class: ["paladin"],
     size: "small",
-    originFeat: ["magic initiate"],
+    originFeat: ["magic initiate", "ASI"],
     skills: ["deception", "animal handling", "persuasion", "athletics"],
     languages: ["gnomish", "sylvan"],
     tools: ["herbalism kit"],
-    notes: ["forest gnome", "magic initiate druid"]
+    notes: ["forest gnome", "magic initiate druid", "ASI(+1STR+1CHA)"]
   },
   {
     name: "Guy",
@@ -640,7 +640,7 @@ let adventurers = [
     specie: "tiefling",
     class: ["rogue"],
     size: "medium",
-    originFeat: ["skilled"],
+    originFeat: ["skilled", "sharpshooter"],
     skills: ["athletics", "stealth", "investigation", "deception", "sleight of hand", "acrobatics", "perception", "persuasion", "insight"],
     languages: ["thieves' cant"],
     tools: ["forgery kit", "thieves' tools"],
@@ -673,11 +673,11 @@ let adventurers = [
     specie: "reborn",
     class: ["shaman"],
     size: "medium",
-    originFeat: ["magic initiate"],
+    originFeat: ["magic initiate", "war caster"],
     skills: ["insight", "stealth", "perception", "survival"],
     languages: ["dwarvish", "elvish"],
     tools: ["herbalism kit"],
-    notes: ["reborn de fairy", "magic initiate wizard"]
+    notes: ["reborn de fairy", "magic initiate wizard", "war caster(+1wis)"]
   },
   {
     name: "Belladonna",
@@ -772,11 +772,11 @@ let adventurers = [
     specie: "elf",
     class: ["ranger"],
     size: "medium",
-    originFeat: ["lucky"],
+    originFeat: ["lucky", "war caster"],
     skills: ["perception", "religion", "acrobatics", "insight", "stealth", "survival"],
     languages: ["celestial", "elvish"],
     tools: ["jeweler's tools"],
-    notes: ["high elf"]
+    notes: ["high elf", "cleric light", "war caster(+1wis)"]
   },
   {
     name: "Garro",
@@ -1118,6 +1118,17 @@ let adventurers = [
     languages: ["undercommon", "celestial"],
     tools: ["thieves' tools"],
     notes: [""]
+  },
+  {
+    name: "Kalius",
+    specie: "dragonborn",
+    class: ["wizard"],
+    size: "medium",
+    originFeat: ["magic initiate"],
+    skills: ["history", "religion", "arcane", "investigation"],
+    languages: ["dragonborn", "elvish"],
+    tools: ["calligrapher's supplies"],
+    notes: ["magic initiate cleric"]
   },
 
 
