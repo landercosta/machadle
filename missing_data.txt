@@ -9,6 +9,8 @@
 - Dumbo diz que a feat de origem é criminal, coloquei alert que vem no background criminal, mas não dá para ter certeza. Também escreveu as proficiências de forma errada, é ladino com apenas a thieve's tools de proficiência de ferramenta
 - Arthas: não colocou as proficiências de background e de humano, apenas as de classe
 - Kael Draven: uma perícia de background é igual a uma de classe
+- Aldebaran: Não tenho certeza das informações após respec: skills, idiomas e ferramentas
+
 
 
 - Xhanks de fora por falta de informações
@@ -20,7 +22,6 @@
 
 - Verificar os aventureiros antes do Mírio no canal de nível 1
 
-- Aldebaran: qual tipo de tiefling?
 - Belladonna: confirmar dados de skills e tools. Não ficou 100% claro no respec (https://discord.com/channels/509826698473111563/1392899407770288138/1399826982828773617)
 - Benji: confirmar skills e tipo do magic initiate
 - Caranthir: qual tipo de elfo?

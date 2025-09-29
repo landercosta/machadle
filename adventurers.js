@@ -1,6 +1,6 @@
 // Último aventureiro de nível 1 visto foi o Kalius
-// Último aventureiro de nível 5 visto foi a Yu-baba
-// Último respec visto foi o Naamir
+// Último aventureiro de nível 5 visto foi a Kuki
+// Último respec visto foi o Rancor
 
 let adventurers = [
   {
@@ -123,7 +123,7 @@ let adventurers = [
     specie: "tiefling",
     class: ["paladin"],
     size: "medium",
-    originFeat: ["magic initiate", "mage slayer"],
+    originFeat: ["tough", "mage slayer"],
     skills: ["perception", "survival", "insight", "intimidation"],
     languages: ["abyssal", "primordial"],
     tools: ["smith's tools"],
@@ -244,11 +244,11 @@ let adventurers = [
     specie: "minotaur",
     class: ["shaman"],
     size: "medium",
-    originFeat: ["magic initiate", "war caster"],
-    skills: ["perception", "investigation", "insight", "survival"],
-    languages: ["primordial", "orc"],
-    tools: ["woodcarver's tools"],
-    notes: ["magic initiate wizard", "war caster wis+1"]
+    originFeat: ["tough", "war caster"],
+    skills: ["perception", "arcana", "insight", "survival"],
+    languages: ["primordial", "giant"],
+    tools: ["smith's tools"],
+    notes: ["war caster wis+1"]
   },
   {
     name: "Kaira",
@@ -264,13 +264,13 @@ let adventurers = [
   {
     name: "Kuki",
     specie: "harengon",
-    class: ["cleric"],
+    class: ["barbarian"],
     size: "small",
-    originFeat: ["magic initiate"],
-    skills: ["perception", "insight", "religion", "history", "medicine"],
+    originFeat: ["tough", "sentinel"],
+    skills: ["intimidation", "athletics", "nature", "animal handling", "survival"],
     languages: ["sylvan", "dwarvish"],
     tools: ["herbalism kit"],
-    notes: ["magic initiate druid"]
+    notes: ["barbarian zealot"]
   },
   {
     name: "HD-III",
@@ -299,11 +299,11 @@ let adventurers = [
     specie: "tiefling",
     class: ["bard"],
     size: "medium",
-    originFeat: ["skilled"],
+    originFeat: ["skilled", "ASI"],
     skills: ["acrobatics", "perception", "deception", "history", "persuasion", "performance", "intimidation", "arcana"],
     languages: ["infernal", "abyssal"],
     tools: ["gaming set"],
-    notes: ["tiefling infernal", "dice set"]
+    notes: ["tiefling infernal", "dice set", "ASI(+2CHA)"]
   },
   {
     name: "Ben",
@@ -442,7 +442,7 @@ let adventurers = [
     specie: "dwarf",
     class: ["barbarian"],
     size: "medium",
-    originFeat: ["tavern brawler"],
+    originFeat: ["tavern brawler", "grappler"],
     skills: ["acrobatics", "perception", "survival", "intimidation"],
     languages: ["dwarvish", "orc"],
     tools: ["navigator's tools"],
@@ -659,14 +659,14 @@ let adventurers = [
   },
   {
     name: "Aldebaran",
-    specie: "tiefling",
-    class: ["warlock"],
+    specie: "human",
+    class: ["warlock", "fighter"],
     size: "medium",
-    originFeat: ["lucky", "spell sniper"],
+    originFeat: ["magic initiate", "lucky", "warcaster"],
     skills: ["persuasion", "perception", "deception", "arcana"],
     languages: ["infernal", "orc"],
     tools: ["disguise kit"],
-    notes: ["spell sniper(+1cha)", "great old one"]
+    notes: ["magic initiate cleric", "spell sniper(+1cha)", "great old one"]
   },
   {
     name: "Yu-baba",
@@ -1130,13 +1130,17 @@ let adventurers = [
     tools: ["calligrapher's supplies"],
     notes: ["magic initiate cleric"]
   },
-
-
-
-
-
-
-
+  {
+    name: "Lyra",
+    specie: "gnome",
+    class: ["bard"],
+    size: "small",
+    originFeat: ["magic initiate"],
+    skills: ["prestidigitation", "perception", "performance", "persuasion", "deception"],
+    languages: ["gnomish", "elvish"],
+    tools: ["smith's tools"],
+    notes: ["bard valor", "magic initiate wizard"]
+  },
 
 
 
@@ -1174,23 +1178,23 @@ const tableBody = document.querySelector('#adventurer-table tbody');
 
 // Variáveis do jogo
 let answers = {
-  15: "Ugz",
-  16: "Aldebaran",
-  17: "Sylas Kow",
-  18: "Thandoril",
-  19: "Christopher",
-  20: "Eiti",
-  21: "Valente",
-  22: "Galria",
-  23: "HD-III",
-  24: "Sylas Kow",
-  25: "Elijah Abdul",
-  26: "Kael",
-  27: "Ronaldo",
-  28: "Kaira",
+  29: "Garro",
+  30: "Gorar",
+  01: "Rakhar",
+  02: "Kardrum",
+  03: "Eiti",
+  04: "Han",
+  05: "Tiddus",
+  06: "Lennox",
+  07: "Ronar",
+  08: "GluGlu",
+  09: "Kaelen Suri",
+  10: "Caranthir Maenal",
+  11: "Kravak",
+  12: "Ben",
 }
 
-// pickAdventurer();
+pickAdventurer();
 
 const guesses = [];
 let win = false;
