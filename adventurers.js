@@ -1194,7 +1194,7 @@ let answers = {
   12: "Ben",
 }
 
-pickAdventurer();
+// pickAdventurer();
 
 const guesses = [];
 let win = false;
