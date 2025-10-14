@@ -1178,12 +1178,6 @@ const tableBody = document.querySelector('#adventurer-table tbody');
 
 // Variáveis do jogo
 let answers = {
-  29: "Garro",
-  30: "Gorar",
-  01: "Rakhar",
-  02: "Kardrum",
-  03: "Eiti",
-  04: "Han",
   05: "Tiddus",
   06: "Lennox",
   07: "Ronar",
@@ -1191,10 +1185,24 @@ let answers = {
   09: "Kaelen Suri",
   10: "Caranthir Maenal",
   11: "Kravak",
-  12: "Ben",
+  12: "Yoh Asakura",
+  13: "Gertrudes",
+  14: "Kira",
+  15: "Lyra",
+  16: "Rakhar",
+  17: "Sanguinyus",
+  18: "Maximus",
+  19: "Naamir",
+  20: "Alpha",
+  21: "Mug",
+  22: "Sylas Kow",
+  23: "Paxó",
+  24: "Luli",
+  25: "Ronaldo",
+  26: "Kardrum",
 }
 
-// pickAdventurer();
+pickAdventurer();
 
 const guesses = [];
 let win = false;
